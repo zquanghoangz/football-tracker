@@ -3,7 +3,7 @@ import type { Match } from '../../types/tournament.ts';
 
 // Built from a char code rather than a literal non-breaking-space character so it
 // survives copy/paste and editor round-trips without silently becoming a no-op regex.
-const NBSP_PATTERN = new RegExp(String.fromCharCode(0x00a0), 'g');
+export const NBSP_PATTERN = new RegExp(String.fromCharCode(0x00a0), 'g');
 
 export function parseFootballboxMatch($: cheerio.CheerioAPI, box: unknown): Match {
   const $box = $(box as never);

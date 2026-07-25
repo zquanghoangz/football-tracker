@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-07-25T01:28:15.894Z"
+    "scrapedAt": "2026-07-25T12:30:56.531Z"
   },
   "groups": [
     {
@@ -182,20 +182,20 @@
       "standings": [
         {
           "position": 1,
-          "team": "Thailand",
-          "played": 0,
-          "won": 0,
+          "team": "Malaysia",
+          "played": 1,
+          "won": 1,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "points": 3,
           "qualification": "Advance to knockout stage"
         },
         {
           "position": 2,
-          "team": "Malaysia",
+          "team": "Thailand",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -221,7 +221,7 @@
         },
         {
           "position": 4,
-          "team": "Myanmar",
+          "team": "Laos",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -234,14 +234,14 @@
         },
         {
           "position": 5,
-          "team": "Laos",
-          "played": 0,
+          "team": "Myanmar",
+          "played": 1,
           "won": 0,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDifference": -1,
           "points": 0,
           "qualification": ""
         }
@@ -252,10 +252,10 @@
           "time": "16:30 UTC+6:30",
           "homeTeam": "Myanmar",
           "awayTeam": "Malaysia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 2,
           "venue": "Thuwunna Stadium, Yangon",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-07-25",
@@ -361,12 +361,14 @@
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-15",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null
             },
             "secondLeg": {
               "date": "2026-08-18",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null
@@ -378,12 +380,14 @@
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-16",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null
             },
             "secondLeg": {
               "date": "2026-08-19",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null
@@ -400,12 +404,14 @@
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-22",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null
             },
             "secondLeg": {
               "date": "2026-08-26",
+              "time": "--:--",
               "venue": null,
               "homeScore": null,
               "awayScore": null

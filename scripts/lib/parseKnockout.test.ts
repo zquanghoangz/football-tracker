@@ -64,12 +64,14 @@ test('pairs sequential footballbox legs to the correct tie, with placeholder tea
   assert.equal(tie.aggregate, null);
   assert.deepEqual(tie.firstLeg, {
     date: '2026-08-15',
+    time: '19:00 UTC+7',
     venue: 'Stadium One, City One',
     homeScore: null,
     awayScore: null,
   });
   assert.deepEqual(tie.secondLeg, {
     date: '2026-08-18',
+    time: '19:00 UTC+7',
     venue: 'Stadium Two, City Two',
     homeScore: null,
     awayScore: null,

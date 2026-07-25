@@ -36,7 +36,7 @@ export function MatchList({
     <ul className="mt-3 space-y-1.5">
       {matches.map((match, i) => {
         const isFeatured = match.homeTeam === featuredTeam || match.awayTeam === featuredTeam;
-        const isToday = match.date === today;
+        const isToday = match.date === today && !match.played;
         return (
           <li
             key={i}
@@ -52,7 +52,7 @@ export function MatchList({
               </span>
             )}
             <KickoffTimes date={match.date} time={match.time} />
-            <div className="flex flex-1 items-center justify-center gap-2 font-medium text-slate-200">
+            <div className="flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 font-medium text-slate-200 sm:w-auto sm:flex-1 sm:flex-nowrap">
               <span
                 className={
                   'flex items-center gap-1.5 ' +
@@ -75,7 +75,7 @@ export function MatchList({
                 {match.awayTeam}
               </span>
             </div>
-            <div className="text-xs text-slate-500">{match.venue}</div>
+            <div className="w-full text-xs text-slate-500 sm:w-auto">{match.venue}</div>
           </li>
         );
       })}

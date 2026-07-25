@@ -31,6 +31,7 @@ export interface GroupData {
 
 export interface KnockoutLeg {
   date: string | null;
+  time: string | null;
   venue: string | null;
   homeScore: number | null;
   awayScore: number | null;

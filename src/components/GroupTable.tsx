@@ -23,12 +23,11 @@ export function GroupTable({
             <th className="px-2 py-2">W</th>
             <th className="px-2 py-2">D</th>
             <th className="px-2 py-2">L</th>
-            <th className="px-2 py-2">GF</th>
-            <th className="px-2 py-2">GA</th>
+            <th className="hidden px-2 py-2 sm:table-cell">GF</th>
+            <th className="hidden px-2 py-2 sm:table-cell">GA</th>
             <th className="px-2 py-2">GD</th>
             <th className="px-2 py-2 font-bold text-slate-200">Pts</th>
-            <th className="px-3 py-2">Last 5</th>
-            <th className="px-3 py-2 text-left">Qualification</th>
+            <th className="hidden px-3 py-2 sm:table-cell">Last 5</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-slate-800">
@@ -55,15 +54,16 @@ export function GroupTable({
                 <td className="px-2 py-2 text-center tabular-nums">{row.won}</td>
                 <td className="px-2 py-2 text-center tabular-nums">{row.drawn}</td>
                 <td className="px-2 py-2 text-center tabular-nums">{row.lost}</td>
-                <td className="px-2 py-2 text-center tabular-nums">{row.goalsFor}</td>
-                <td className="px-2 py-2 text-center tabular-nums">{row.goalsAgainst}</td>
+                <td className="hidden px-2 py-2 text-center tabular-nums sm:table-cell">
+                  {row.goalsFor}
+                </td>
+                <td className="hidden px-2 py-2 text-center tabular-nums sm:table-cell">
+                  {row.goalsAgainst}
+                </td>
                 <td className="px-2 py-2 text-center tabular-nums">{row.goalDifference}</td>
                 <td className="px-2 py-2 text-center tabular-nums font-bold">{row.points}</td>
-                <td className="px-3 py-2">
+                <td className="hidden px-3 py-2 sm:table-cell">
                   <FormBadges form={getRecentForm(row.team, matches)} />
-                </td>
-                <td className="px-3 py-2 text-left text-xs text-slate-400">
-                  {row.qualification || '–'}
                 </td>
               </tr>
             );

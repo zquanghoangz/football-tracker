@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
 import type { KnockoutLeg, KnockoutRound, KnockoutTie } from '../../types/tournament.ts';
+import { NBSP_PATTERN } from './parseMatches.ts';
 
 interface TieSummary {
   team1: string;
@@ -48,6 +49,7 @@ function parseTieSummaries($: cheerio.CheerioAPI, table: unknown): TieSummary[] 
 function parseLeg($: cheerio.CheerioAPI, box: unknown): KnockoutLeg {
   const $box = $(box as never);
   const date = $box.find('.fdate .bday').first().text().trim() || null;
+  const time = $box.find('.ftime').first().text().replace(NBSP_PATTERN, ' ').trim() || null;
   const scoreText = $box.find('th.fscore').first().text().trim();
   const played = /\d/.test(scoreText);
 
@@ -66,10 +68,16 @@ function parseLeg($: cheerio.CheerioAPI, box: unknown): KnockoutLeg {
       .get()
       .join(', ') || null;
 
-  return { date, venue, homeScore, awayScore };
+  return { date, time, venue, homeScore, awayScore };
 }
 
-const EMPTY_LEG: KnockoutLeg = { date: null, venue: null, homeScore: null, awayScore: null };
+const EMPTY_LEG: KnockoutLeg = {
+  date: null,
+  time: null,
+  venue: null,
+  homeScore: null,
+  awayScore: null,
+};
 
 export function parseKnockout(html: string): { rounds: KnockoutRound[] } {
   const $ = cheerio.load(html);

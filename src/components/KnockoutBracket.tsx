@@ -39,13 +39,13 @@ export function KnockoutBracket({
                     (isFeatured ? 'border-emerald-500/60 bg-emerald-500/10' : 'border-slate-800')
                   }
                 >
-                  <div className="mb-1.5 flex items-center justify-between text-sm font-semibold text-slate-200">
-                    <span className="flex items-center gap-1.5">
+                  <div className="mb-1.5 flex flex-wrap items-center justify-between gap-x-2 gap-y-1 text-sm font-semibold text-slate-200">
+                    <span className="flex flex-wrap items-center gap-1.5">
                       <Flag team={tie.team1} /> {tie.team1}{' '}
                       <span className="text-slate-500">vs</span> <Flag team={tie.team2} />{' '}
                       {tie.team2}
                     </span>
-                    <span className="rounded bg-slate-800 px-2 py-0.5 text-xs font-bold text-slate-300">
+                    <span className="shrink-0 rounded bg-slate-800 px-2 py-0.5 text-xs font-bold text-slate-300">
                       Agg. {tie.aggregate ?? 'TBD'}
                     </span>
                   </div>

@@ -14,7 +14,7 @@ function App() {
   const upcomingMatches = getFeaturedTeamUpcomingMatches(tournamentData, FEATURED_TEAM);
 
   return (
-    <div className="min-h-screen bg-slate-950 pb-12">
+    <div className="min-h-screen overflow-x-hidden bg-slate-950 pb-12">
       <header className="mx-auto flex max-w-[1800px] items-center gap-3 px-4 pt-8 pb-4 sm:px-8">
         <FootballLogo className="h-10 w-10 shrink-0" />
         <div>
