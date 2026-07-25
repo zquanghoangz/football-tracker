@@ -1,0 +1,418 @@
+{
+  "tournament": {
+    "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
+    "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
+    "scrapedAt": "2026-07-25T01:28:15.894Z"
+  },
+  "groups": [
+    {
+      "name": "Group A",
+      "standings": [
+        {
+          "position": 1,
+          "team": "Vietnam",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 7,
+          "goalsAgainst": 0,
+          "goalDifference": 7,
+          "points": 3,
+          "qualification": "Advance to knockout stage"
+        },
+        {
+          "position": 2,
+          "team": "Singapore",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "points": 3,
+          "qualification": "Advance to knockout stage"
+        },
+        {
+          "position": 3,
+          "team": "Indonesia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": ""
+        },
+        {
+          "position": 4,
+          "team": "Cambodia",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDifference": -1,
+          "points": 0,
+          "qualification": ""
+        },
+        {
+          "position": 5,
+          "team": "Timor-Leste",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 7,
+          "goalDifference": -7,
+          "points": 0,
+          "qualification": ""
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-07-24",
+          "time": "19:00 UTC+7",
+          "homeTeam": "Cambodia",
+          "awayTeam": "Singapore",
+          "homeScore": 1,
+          "awayScore": 2,
+          "venue": "Morodok Techo National Stadium, Phnom Penh",
+          "played": true
+        },
+        {
+          "date": "2026-07-24",
+          "time": "20:30 UTC+7",
+          "homeTeam": "Timor-Leste",
+          "awayTeam": "Vietnam",
+          "homeScore": 0,
+          "awayScore": 7,
+          "venue": "Chonburi Stadium, Chonburi",
+          "played": true
+        },
+        {
+          "date": "2026-07-27",
+          "time": "19:00 UTC+8",
+          "homeTeam": "Singapore",
+          "awayTeam": "Timor-Leste",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Jalan Besar Stadium, Kallang",
+          "played": false
+        },
+        {
+          "date": "2026-07-27",
+          "time": "20:30 UTC+7",
+          "homeTeam": "Indonesia",
+          "awayTeam": "Cambodia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Pakansari Stadium, Bogor",
+          "played": false
+        },
+        {
+          "date": "2026-07-31",
+          "time": "17:00 UTC+7",
+          "homeTeam": "Timor-Leste",
+          "awayTeam": "Indonesia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Chonburi Stadium, Chonburi",
+          "played": false
+        },
+        {
+          "date": "2026-07-31",
+          "time": "20:00 UTC+7",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Singapore",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Mỹ Đình National Stadium, Hanoi",
+          "played": false
+        },
+        {
+          "date": "2026-08-03",
+          "time": "17:30 UTC+7",
+          "homeTeam": "Cambodia",
+          "awayTeam": "Timor-Leste",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Morodok Techo National Stadium, Phnom Penh",
+          "played": false
+        },
+        {
+          "date": "2026-08-03",
+          "time": "20:30 UTC+7",
+          "homeTeam": "Indonesia",
+          "awayTeam": "Vietnam",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Pakansari Stadium, Bogor",
+          "played": false
+        },
+        {
+          "date": "2026-08-07",
+          "time": "20:00 UTC+7",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Cambodia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Mỹ Đình National Stadium, Hanoi",
+          "played": false
+        },
+        {
+          "date": "2026-08-07",
+          "time": "21:00 UTC+8",
+          "homeTeam": "Singapore",
+          "awayTeam": "Indonesia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Jalan Besar Stadium, Kallang",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "standings": [
+        {
+          "position": 1,
+          "team": "Thailand",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": "Advance to knockout stage"
+        },
+        {
+          "position": 2,
+          "team": "Malaysia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": "Advance to knockout stage"
+        },
+        {
+          "position": 3,
+          "team": "Philippines",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": ""
+        },
+        {
+          "position": 4,
+          "team": "Myanmar",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": ""
+        },
+        {
+          "position": 5,
+          "team": "Laos",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "qualification": ""
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-07-25",
+          "time": "16:30 UTC+6:30",
+          "homeTeam": "Myanmar",
+          "awayTeam": "Malaysia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Thuwunna Stadium, Yangon",
+          "played": false
+        },
+        {
+          "date": "2026-07-25",
+          "time": "20:00 UTC+7",
+          "homeTeam": "Laos",
+          "awayTeam": "Thailand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "New Laos National Stadium, Vientiane",
+          "played": false
+        },
+        {
+          "date": "2026-07-28",
+          "time": "18:00 UTC+8",
+          "homeTeam": "Philippines",
+          "awayTeam": "Myanmar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "New Clark City Athletics Stadium, Capas",
+          "played": false
+        },
+        {
+          "date": "2026-07-28",
+          "time": "21:00 UTC+8",
+          "homeTeam": "Malaysia",
+          "awayTeam": "Laos",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
+          "played": false
+        },
+        {
+          "date": "2026-08-01",
+          "time": "17:00 UTC+7",
+          "homeTeam": "Laos",
+          "awayTeam": "Philippines",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "New Laos National Stadium, Vientiane",
+          "played": false
+        },
+        {
+          "date": "2026-08-01",
+          "time": "20:00 UTC+7",
+          "homeTeam": "Thailand",
+          "awayTeam": "Malaysia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Rajamangala Stadium, Bangkok",
+          "played": false
+        },
+        {
+          "date": "2026-08-04",
+          "time": "16:30 UTC+6:30",
+          "homeTeam": "Myanmar",
+          "awayTeam": "Laos",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Thuwunna Stadium, Yangon",
+          "played": false
+        },
+        {
+          "date": "2026-08-04",
+          "time": "21:00 UTC+8",
+          "homeTeam": "Philippines",
+          "awayTeam": "Thailand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "New Clark City Athletics Stadium, Capas",
+          "played": false
+        },
+        {
+          "date": "2026-08-08",
+          "time": "20:00 UTC+7",
+          "homeTeam": "Thailand",
+          "awayTeam": "Myanmar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Rajamangala Stadium, Bangkok",
+          "played": false
+        },
+        {
+          "date": "2026-08-08",
+          "time": "21:00 UTC+8",
+          "homeTeam": "Malaysia",
+          "awayTeam": "Philippines",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
+          "played": false
+        }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": [
+      {
+        "name": "Semi-finals",
+        "ties": [
+          {
+            "team1": "Runner-up Group A",
+            "team2": "Winner Group B",
+            "aggregate": null,
+            "firstLeg": {
+              "date": "2026-08-15",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            },
+            "secondLeg": {
+              "date": "2026-08-18",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            }
+          },
+          {
+            "team1": "Runner-up Group B",
+            "team2": "Winner Group A",
+            "aggregate": null,
+            "firstLeg": {
+              "date": "2026-08-16",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            },
+            "secondLeg": {
+              "date": "2026-08-19",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Final",
+        "ties": [
+          {
+            "team1": "Winner semi-final 1",
+            "team2": "Winner semi-final 2",
+            "aggregate": null,
+            "firstLeg": {
+              "date": "2026-08-22",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            },
+            "secondLeg": {
+              "date": "2026-08-26",
+              "venue": null,
+              "homeScore": null,
+              "awayScore": null
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
