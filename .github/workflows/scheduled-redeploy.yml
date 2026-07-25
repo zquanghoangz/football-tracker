@@ -1,0 +1,41 @@
+name: Scheduled post-match redeploy
+
+on:
+  schedule:
+    # Every 30 min, 12:00-16:59 UTC — covers this tournament's kickoff+2h band
+    # (see docs/specs/2026-07-25-scheduled-redeploy-design.md, "Data flow").
+    # checkWindowMinutes in config/tournament.json must match this 30-min interval.
+    - cron: '*/30 12-16 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Trigger the Vercel deploy hook even if no match is in its window (for testing)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  check-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check whether a match just entered its redeploy window
+        id: check
+        continue-on-error: true
+        run: node scripts/checkDeployTrigger.ts
+
+      - name: Trigger Vercel deploy
+        if: steps.check.outcome == 'success' || inputs.force == true
+        run: curl -fsS -X POST "$VERCEL_DEPLOY_HOOK_URL"
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
