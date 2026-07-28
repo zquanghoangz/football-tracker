@@ -27,14 +27,19 @@ import es from 'flag-icons/flags/4x3/es.svg';
 import fj from 'flag-icons/flags/4x3/fj.svg';
 import fr from 'flag-icons/flags/4x3/fr.svg';
 import gr from 'flag-icons/flags/4x3/gr.svg';
+import hk from 'flag-icons/flags/4x3/hk.svg';
 import hn from 'flag-icons/flags/4x3/hn.svg';
 import hr from 'flag-icons/flags/4x3/hr.svg';
 import ht from 'flag-icons/flags/4x3/ht.svg';
 import ie from 'flag-icons/flags/4x3/ie.svg';
+import ir from 'flag-icons/flags/4x3/ir.svg';
 import it from 'flag-icons/flags/4x3/it.svg';
 import jm from 'flag-icons/flags/4x3/jm.svg';
 import jp from 'flag-icons/flags/4x3/jp.svg';
+import kg from 'flag-icons/flags/4x3/kg.svg';
+import kp from 'flag-icons/flags/4x3/kp.svg';
 import kr from 'flag-icons/flags/4x3/kr.svg';
+import kw from 'flag-icons/flags/4x3/kw.svg';
 import ma from 'flag-icons/flags/4x3/ma.svg';
 import me from 'flag-icons/flags/4x3/me.svg';
 import ml from 'flag-icons/flags/4x3/ml.svg';
@@ -50,6 +55,7 @@ import sa from 'flag-icons/flags/4x3/sa.svg';
 import sn from 'flag-icons/flags/4x3/sn.svg';
 import tj from 'flag-icons/flags/4x3/tj.svg';
 import tz from 'flag-icons/flags/4x3/tz.svg';
+import ae from 'flag-icons/flags/4x3/ae.svg';
 import ug from 'flag-icons/flags/4x3/ug.svg';
 import us from 'flag-icons/flags/4x3/us.svg';
 import uy from 'flag-icons/flags/4x3/uy.svg';
@@ -62,8 +68,8 @@ import { countryCodeFor } from '../lib/teamCountry';
 const FLAG_URL: Record<string, string> = {
   vn, sg, id, kh, tl, th, my, ph, mm, la,
   ar, au, be, br, ci, cl, cm, cn, co, cr, cu, dk, dz, ec, eg, es, fj, fr, gr,
-  hn, hr, ht, ie, it, jm, jp, kr, ma, me, ml, mx, mz, nc, nz, pa, qa, ro, rs,
-  sa, sn, tj, tz, ug, us, uy, uz, ve,
+  hk, hn, hr, ht, ie, ir, it, jm, jp, kg, kp, kr, kw, ma, me, ml, mx, mz, nc, nz, pa, qa, ro, rs,
+  sa, sn, tj, tz, ae, ug, us, uy, uz, ve,
 };
 
 export function Flag({ team }: { team: string }) {
