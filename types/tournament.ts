@@ -9,7 +9,6 @@ export interface StandingsRow {
   goalsAgainst: number;
   goalDifference: number;
   points: number;
-  qualification: string;
 }
 
 export interface Match {

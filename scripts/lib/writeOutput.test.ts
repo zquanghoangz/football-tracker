@@ -23,7 +23,6 @@ const VALID_DATA: TournamentData = {
           goalsAgainst: 0,
           goalDifference: 2,
           points: 3,
-          qualification: '',
         },
       ],
       matches: [],
@@ -41,8 +40,17 @@ test('validateTournamentData throws when a group has no standings', () => {
   assert.throws(() => validateTournamentData(data), /no standings/i);
 });
 
-test('validateTournamentData throws when there are no knockout rounds', () => {
-  assert.throws(() => validateTournamentData({ ...VALID_DATA, knockout: { rounds: [] } }), /no knockout rounds/i);
+test('validateTournamentData does not throw when there are no knockout rounds', () => {
+  assert.doesNotThrow(() => validateTournamentData({ ...VALID_DATA, knockout: { rounds: [] } }));
+});
+
+test('writeTournamentData writes successfully with empty knockout rounds', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'tournament-'));
+  const outputFile = join(dir, 'tournament.json');
+  const data = { ...VALID_DATA, knockout: { rounds: [] } };
+  writeTournamentData(outputFile, data);
+  const written = JSON.parse(readFileSync(outputFile, 'utf-8'));
+  assert.deepEqual(written, data);
 });
 
 test('writeTournamentData writes valid JSON atomically', () => {

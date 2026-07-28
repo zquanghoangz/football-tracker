@@ -8,11 +8,63 @@ import my from 'flag-icons/flags/4x3/my.svg';
 import ph from 'flag-icons/flags/4x3/ph.svg';
 import mm from 'flag-icons/flags/4x3/mm.svg';
 import la from 'flag-icons/flags/4x3/la.svg';
+import ar from 'flag-icons/flags/4x3/ar.svg';
+import au from 'flag-icons/flags/4x3/au.svg';
+import be from 'flag-icons/flags/4x3/be.svg';
+import br from 'flag-icons/flags/4x3/br.svg';
+import ci from 'flag-icons/flags/4x3/ci.svg';
+import cl from 'flag-icons/flags/4x3/cl.svg';
+import cm from 'flag-icons/flags/4x3/cm.svg';
+import cn from 'flag-icons/flags/4x3/cn.svg';
+import co from 'flag-icons/flags/4x3/co.svg';
+import cr from 'flag-icons/flags/4x3/cr.svg';
+import cu from 'flag-icons/flags/4x3/cu.svg';
+import dk from 'flag-icons/flags/4x3/dk.svg';
+import dz from 'flag-icons/flags/4x3/dz.svg';
+import ec from 'flag-icons/flags/4x3/ec.svg';
+import eg from 'flag-icons/flags/4x3/eg.svg';
+import es from 'flag-icons/flags/4x3/es.svg';
+import fj from 'flag-icons/flags/4x3/fj.svg';
+import fr from 'flag-icons/flags/4x3/fr.svg';
+import gr from 'flag-icons/flags/4x3/gr.svg';
+import hn from 'flag-icons/flags/4x3/hn.svg';
+import hr from 'flag-icons/flags/4x3/hr.svg';
+import ht from 'flag-icons/flags/4x3/ht.svg';
+import ie from 'flag-icons/flags/4x3/ie.svg';
+import it from 'flag-icons/flags/4x3/it.svg';
+import jm from 'flag-icons/flags/4x3/jm.svg';
+import jp from 'flag-icons/flags/4x3/jp.svg';
+import kr from 'flag-icons/flags/4x3/kr.svg';
+import ma from 'flag-icons/flags/4x3/ma.svg';
+import me from 'flag-icons/flags/4x3/me.svg';
+import ml from 'flag-icons/flags/4x3/ml.svg';
+import mx from 'flag-icons/flags/4x3/mx.svg';
+import mz from 'flag-icons/flags/4x3/mz.svg';
+import nc from 'flag-icons/flags/4x3/nc.svg';
+import nz from 'flag-icons/flags/4x3/nz.svg';
+import pa from 'flag-icons/flags/4x3/pa.svg';
+import qa from 'flag-icons/flags/4x3/qa.svg';
+import ro from 'flag-icons/flags/4x3/ro.svg';
+import rs from 'flag-icons/flags/4x3/rs.svg';
+import sa from 'flag-icons/flags/4x3/sa.svg';
+import sn from 'flag-icons/flags/4x3/sn.svg';
+import tj from 'flag-icons/flags/4x3/tj.svg';
+import tz from 'flag-icons/flags/4x3/tz.svg';
+import ug from 'flag-icons/flags/4x3/ug.svg';
+import us from 'flag-icons/flags/4x3/us.svg';
+import uy from 'flag-icons/flags/4x3/uy.svg';
+import uz from 'flag-icons/flags/4x3/uz.svg';
+import ve from 'flag-icons/flags/4x3/ve.svg';
 import { countryCodeFor } from '../lib/teamCountry';
 
 // Importing individual SVGs (rather than the flag-icons CSS sprite, which
 // references every country) keeps the bundle to only the flags we use.
-const FLAG_URL: Record<string, string> = { vn, sg, id, kh, tl, th, my, ph, mm, la };
+const FLAG_URL: Record<string, string> = {
+  vn, sg, id, kh, tl, th, my, ph, mm, la,
+  ar, au, be, br, ci, cl, cm, cn, co, cr, cu, dk, dz, ec, eg, es, fj, fr, gr,
+  hn, hr, ht, ie, it, jm, jp, kr, ma, me, ml, mx, mz, nc, nz, pa, qa, ro, rs,
+  sa, sn, tj, tz, ug, us, uy, uz, ve,
+};
 
 export function Flag({ team }: { team: string }) {
   const code = countryCodeFor(team);

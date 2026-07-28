@@ -37,3 +37,12 @@ export function shouldTriggerDeploy(
     return nowMs >= windowStart && nowMs < windowEnd;
   });
 }
+
+export function shouldTriggerAnyDeploy(
+  entries: { kickoffs: Date[]; redeployDelayMinutes: number; checkWindowMinutes: number }[],
+  now: Date,
+): boolean {
+  return entries.some((entry) =>
+    shouldTriggerDeploy(entry.kickoffs, now, entry.redeployDelayMinutes, entry.checkWindowMinutes),
+  );
+}

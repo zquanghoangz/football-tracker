@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { collectKickoffs, shouldTriggerDeploy } from './deployTrigger.ts';
+import { collectKickoffs, shouldTriggerDeploy, shouldTriggerAnyDeploy } from './deployTrigger.ts';
 import type { GroupData, KnockoutRound } from '../../types/tournament.ts';
 
 const GROUPS: GroupData[] = [
@@ -112,4 +112,42 @@ test('collectKickoffs skips a knockout leg with the real-world "--:--" unschedul
 
   const kickoffs = collectKickoffs([], roundsWithUnscheduledTime).map((d) => d.toISOString());
   assert.deepEqual(kickoffs, ['2026-08-15T11:00:00.000Z']);
+});
+
+test('shouldTriggerAnyDeploy fires when only one of several tournaments has a match in window', () => {
+  const now = new Date('2026-07-24T14:05:00.000Z'); // 125 min after the ASEAN kickoff below
+
+  const entries = [
+    {
+      kickoffs: [new Date('2026-07-24T12:00:00.000Z')], // ASEAN: in its window
+      redeployDelayMinutes: 120,
+      checkWindowMinutes: 30,
+    },
+    {
+      kickoffs: [new Date('2026-11-19T14:00:00.000Z')], // U-17: nowhere near `now`
+      redeployDelayMinutes: 120,
+      checkWindowMinutes: 30,
+    },
+  ];
+
+  assert.equal(shouldTriggerAnyDeploy(entries, now), true);
+});
+
+test('shouldTriggerAnyDeploy returns false when several tournaments exist and none have a match in window', () => {
+  const now = new Date('2026-07-24T14:05:00.000Z');
+
+  const entries = [
+    {
+      kickoffs: [new Date('2026-07-24T14:00:00.000Z')], // only 5 min after kickoff, nowhere near the 120-150 min window
+      redeployDelayMinutes: 120,
+      checkWindowMinutes: 30,
+    },
+    {
+      kickoffs: [new Date('2026-11-19T14:00:00.000Z')], // a different tournament's kickoff, nowhere near `now`
+      redeployDelayMinutes: 120,
+      checkWindowMinutes: 30,
+    },
+  ];
+
+  assert.equal(shouldTriggerAnyDeploy(entries, now), false);
 });

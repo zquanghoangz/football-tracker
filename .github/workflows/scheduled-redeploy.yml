@@ -2,10 +2,7 @@ name: Scheduled post-match redeploy
 
 on:
   schedule:
-    # Every 30 min, 12:00-16:59 UTC — covers this tournament's kickoff+2h band
-    # (see docs/specs/2026-07-25-scheduled-redeploy-design.md, "Data flow").
-    # checkWindowMinutes in config/tournament.json must match this 30-min interval.
-    - cron: '*/30 12-16 * * *'
+    - cron: '*/30 12-18 * * *'
   workflow_dispatch:
     inputs:
       force:

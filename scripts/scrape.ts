@@ -1,18 +1,18 @@
-import { loadConfig } from './lib/loadConfig.ts';
+import { loadConfigs } from './lib/loadConfig.ts';
 import { fetchArticleHtml } from './lib/fetchArticle.ts';
 import { parseGroups } from './lib/parseGroups.ts';
 import { parseKnockout } from './lib/parseKnockout.ts';
+import { normalizeGroupTimes, normalizeKnockoutTimes } from './lib/normalizeMatchTime.ts';
 import { writeTournamentData } from './lib/writeOutput.ts';
 import type { TournamentData } from '../types/tournament.ts';
 
-async function main() {
-  const config = loadConfig('config/tournament.json');
+async function scrapeOne(config: ReturnType<typeof loadConfigs>[number]): Promise<void> {
   const sourceUrl = `https://en.wikipedia.org/wiki/${config.wikipediaTitle}`;
   console.log(`Fetching ${sourceUrl} ...`);
   const html = await fetchArticleHtml(config.wikipediaTitle);
 
-  const groups = parseGroups(html);
-  const knockout = parseKnockout(html);
+  const groups = normalizeGroupTimes(parseGroups(html), config.utcOffset);
+  const knockout = { rounds: normalizeKnockoutTimes(parseKnockout(html).rounds, config.utcOffset) };
 
   const data: TournamentData = {
     tournament: {
@@ -28,6 +28,23 @@ async function main() {
   console.log(
     `Wrote ${config.outputFile}: ${groups.length} groups, ${knockout.rounds.length} knockout rounds`,
   );
+}
+
+async function main() {
+  const configs = loadConfigs('config/tournaments.json');
+  const results = await Promise.allSettled(configs.map(scrapeOne));
+
+  const failures = results
+    .map((result, i) => ({ result, config: configs[i] }))
+    .filter((r): r is { result: PromiseRejectedResult; config: (typeof configs)[number] } => r.result.status === 'rejected');
+
+  for (const failure of failures) {
+    console.error(`Failed to scrape "${failure.config.id}": ${(failure.result.reason as Error).message}`);
+  }
+
+  if (failures.length > 0) {
+    process.exit(1);
+  }
 }
 
 main().catch((err: Error) => {

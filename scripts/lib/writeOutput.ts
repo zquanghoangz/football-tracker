@@ -4,16 +4,13 @@ import type { TournamentData } from '../../types/tournament.ts';
 export function validateTournamentData(data: TournamentData): void {
   if (data.groups.length === 0) {
     throw new Error(
-      'No groups found on the page — check the Wikipedia article structure or wikipediaTitle in config/tournament.json',
+      'No groups found on the page — check the Wikipedia article structure or wikipediaTitle in config/tournaments.json',
     );
   }
   for (const group of data.groups) {
     if (group.standings.length === 0) {
       throw new Error(`Group "${group.name}" has no standings rows — check the page structure`);
     }
-  }
-  if (data.knockout.rounds.length === 0) {
-    throw new Error('No knockout rounds found — check the Wikipedia article structure');
   }
 }
 

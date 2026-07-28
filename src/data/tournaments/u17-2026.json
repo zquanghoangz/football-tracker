@@ -1,0 +1,1392 @@
+{
+  "tournament": {
+    "name": "2026 FIFA U-17 World Cup",
+    "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_U-17_World_Cup",
+    "scrapedAt": "2026-07-27T23:37:53.205Z"
+  },
+  "groups": [
+    {
+      "name": "Group A",
+      "standings": [
+        {
+          "team": "Egypt",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Greece",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Panama",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Qatar",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-19",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Egypt",
+          "awayTeam": "Greece",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-19",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Qatar",
+          "awayTeam": "Panama",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Greece",
+          "awayTeam": "Panama",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Qatar",
+          "awayTeam": "Egypt",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "17:30 UTC+3",
+          "homeTeam": "Greece",
+          "awayTeam": "Qatar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "17:30 UTC+3",
+          "homeTeam": "Panama",
+          "awayTeam": "Egypt",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "standings": [
+        {
+          "team": "Ecuador",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "New Caledonia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "South Korea",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Uganda",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-19",
+          "time": "16:30 UTC+3",
+          "homeTeam": "South Korea",
+          "awayTeam": "Uganda",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-19",
+          "time": "16:00 UTC+3",
+          "homeTeam": "New Caledonia",
+          "awayTeam": "Ecuador",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "17:30 UTC+3",
+          "homeTeam": "South Korea",
+          "awayTeam": "New Caledonia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Ecuador",
+          "awayTeam": "Uganda",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Ecuador",
+          "awayTeam": "South Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Uganda",
+          "awayTeam": "New Caledonia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "standings": [
+        {
+          "team": "Argentina",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Australia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Denmark",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Mozambique",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-19",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Argentina",
+          "awayTeam": "Australia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-19",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Mozambique",
+          "awayTeam": "Denmark",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Argentina",
+          "awayTeam": "Mozambique",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Denmark",
+          "awayTeam": "Australia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Denmark",
+          "awayTeam": "Argentina",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Australia",
+          "awayTeam": "Mozambique",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "standings": [
+        {
+          "team": "France",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Haiti",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Saudi Arabia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Uruguay",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-19",
+          "time": "16:00 UTC+3",
+          "homeTeam": "France",
+          "awayTeam": "Haiti",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-19",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Saudi Arabia",
+          "awayTeam": "Uruguay",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "16:30 UTC+3",
+          "homeTeam": "France",
+          "awayTeam": "Saudi Arabia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-22",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Uruguay",
+          "awayTeam": "Haiti",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Uruguay",
+          "awayTeam": "France",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-25",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Haiti",
+          "awayTeam": "Saudi Arabia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group E",
+      "standings": [
+        {
+          "team": "Italy",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Ivory Coast",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Jamaica",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Uzbekistan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Italy",
+          "awayTeam": "Jamaica",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-20",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Ivory Coast",
+          "awayTeam": "Uzbekistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "17:30 UTC+3",
+          "homeTeam": "Italy",
+          "awayTeam": "Ivory Coast",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Jamaica",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Italy",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Jamaica",
+          "awayTeam": "Ivory Coast",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group F",
+      "standings": [
+        {
+          "team": "Croatia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Cuba",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Senegal",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Tajikistan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Senegal",
+          "awayTeam": "Croatia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-20",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Cuba",
+          "awayTeam": "Tajikistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Senegal",
+          "awayTeam": "Cuba",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Tajikistan",
+          "awayTeam": "Croatia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Tajikistan",
+          "awayTeam": "Senegal",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Croatia",
+          "awayTeam": "Cuba",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group G",
+      "standings": [
+        {
+          "team": "Belgium",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Mali",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "New Zealand",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Vietnam",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Mali",
+          "awayTeam": "New Zealand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-20",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Belgium",
+          "awayTeam": "Vietnam",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Mali",
+          "awayTeam": "Belgium",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Vietnam",
+          "awayTeam": "New Zealand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Mali",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "16:00 UTC+3",
+          "homeTeam": "New Zealand",
+          "awayTeam": "Belgium",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group H",
+      "standings": [
+        {
+          "team": "China",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Fiji",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Morocco",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Spain",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-20",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Spain",
+          "awayTeam": "China",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-20",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Fiji",
+          "awayTeam": "Morocco",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Spain",
+          "awayTeam": "Fiji",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-23",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Morocco",
+          "awayTeam": "China",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Morocco",
+          "awayTeam": "Spain",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-26",
+          "time": "18:00 UTC+3",
+          "homeTeam": "China",
+          "awayTeam": "Fiji",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group I",
+      "standings": [
+        {
+          "team": "Brazil",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Costa Rica",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Republic of Ireland",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Tanzania",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Brazil",
+          "awayTeam": "Republic of Ireland",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-21",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Tanzania",
+          "awayTeam": "Costa Rica",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Brazil",
+          "awayTeam": "Tanzania",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Costa Rica",
+          "awayTeam": "Republic of Ireland",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Costa Rica",
+          "awayTeam": "Brazil",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "17:00 UTC+3",
+          "homeTeam": "Republic of Ireland",
+          "awayTeam": "Tanzania",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group J",
+      "standings": [
+        {
+          "team": "Algeria",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Chile",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Montenegro",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "United States",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "time": "17:30 UTC+3",
+          "homeTeam": "United States",
+          "awayTeam": "Montenegro",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-21",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Chile",
+          "awayTeam": "Algeria",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "17:30 UTC+3",
+          "homeTeam": "United States",
+          "awayTeam": "Chile",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "16:30 UTC+3",
+          "homeTeam": "Algeria",
+          "awayTeam": "Montenegro",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Algeria",
+          "awayTeam": "United States",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "18:00 UTC+3",
+          "homeTeam": "Montenegro",
+          "awayTeam": "Chile",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group K",
+      "standings": [
+        {
+          "team": "Cameroon",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Mexico",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Romania",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Venezuela",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Mexico",
+          "awayTeam": "Romania",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-21",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Cameroon",
+          "awayTeam": "Venezuela",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Mexico",
+          "awayTeam": "Cameroon",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "17:30 UTC+3",
+          "homeTeam": "Venezuela",
+          "awayTeam": "Romania",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Venezuela",
+          "awayTeam": "Mexico",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "19:00 UTC+3",
+          "homeTeam": "Romania",
+          "awayTeam": "Cameroon",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group L",
+      "standings": [
+        {
+          "team": "Colombia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Honduras",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Japan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Serbia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-11-21",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Japan",
+          "awayTeam": "Colombia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-21",
+          "time": "15:30 UTC+3",
+          "homeTeam": "Serbia",
+          "awayTeam": "Honduras",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Japan",
+          "awayTeam": "Serbia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-24",
+          "time": "18:30 UTC+3",
+          "homeTeam": "Honduras",
+          "awayTeam": "Colombia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Honduras",
+          "awayTeam": "Japan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        },
+        {
+          "date": "2026-11-27",
+          "time": "16:00 UTC+3",
+          "homeTeam": "Colombia",
+          "awayTeam": "Serbia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Aspire Zone, Al Rayyan",
+          "played": false
+        }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": []
+  }
+}
