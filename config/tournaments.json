@@ -6,7 +6,7 @@
     "outputFile": "src/data/tournaments/asean-2026.json",
     "utcOffset": "+7",
     "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 60
+    "checkWindowMinutes": 180
   },
   {
     "id": "u17-2026",
@@ -15,6 +15,15 @@
     "outputFile": "src/data/tournaments/u17-2026.json",
     "utcOffset": "+3",
     "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 60
+    "checkWindowMinutes": 180
+  },
+  {
+    "id": "asian-games-2026",
+    "name": "Football at the 2026 Asian Games – Men's tournament",
+    "wikipediaTitle": "Football_at_the_2026_Asian_Games_–_Men's_tournament",
+    "outputFile": "src/data/tournaments/asian-games-2026.json",
+    "utcOffset": "+9",
+    "redeployDelayMinutes": 120,
+    "checkWindowMinutes": 180
   }
 ]
