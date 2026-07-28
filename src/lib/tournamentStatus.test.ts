@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { lastGameDate, isTournamentOver } from './tournamentStatus.ts';
+import { lastGameDate, firstGameDate, isTournamentOver } from './tournamentStatus.ts';
 import type { TournamentData, Match } from '../../types/tournament.ts';
 
 function stubMatch(date: string): Match {
@@ -48,6 +48,19 @@ test('lastGameDate returns the max date across group matches', () => {
 test('lastGameDate considers knockout legs and ignores null (unresolved) ones', () => {
   const data = stubData(['2026-07-24'], [null, '2026-08-10']);
   assert.equal(lastGameDate(data), '2026-08-10');
+});
+
+test('firstGameDate returns null when there are no matches at all', () => {
+  assert.equal(firstGameDate(stubData([])), null);
+});
+
+test('firstGameDate returns the min date across group matches', () => {
+  assert.equal(firstGameDate(stubData(['2026-07-27', '2026-07-24', '2026-07-31'])), '2026-07-24');
+});
+
+test('firstGameDate considers knockout legs and ignores null (unresolved) ones', () => {
+  const data = stubData(['2026-08-10'], [null, '2026-08-05']);
+  assert.equal(firstGameDate(data), '2026-08-05');
 });
 
 test('isTournamentOver is false when there are no matches', () => {
