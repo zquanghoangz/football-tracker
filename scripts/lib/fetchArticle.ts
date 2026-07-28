@@ -3,7 +3,7 @@ export async function fetchArticleHtml(wikipediaTitle: string): Promise<string> 
   const response = await fetch(url, {
     headers: {
       'User-Agent':
-        'FootballTrackerBot/1.0 (personal localhost project; contact: hoang.tong@pointsbet.com)',
+        'FootballTrackerBot/1.0 (personal localhost project)',
     },
   });
   if (!response.ok) {
