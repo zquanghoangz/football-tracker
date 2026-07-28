@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import aseanData from './data/tournaments/asean-2026.json';
 import u17Data from './data/tournaments/u17-2026.json';
+import asianGamesData from './data/tournaments/asian-games-2026.json';
 import type { TournamentData } from '../types/tournament';
 import { GroupTable } from './components/GroupTable';
 import { MatchList } from './components/MatchList';
@@ -10,19 +11,27 @@ import { FootballLogo } from './components/FootballLogo';
 import { TOURNAMENTS, MELBOURNE_TIME_ZONE } from './config';
 import { getFeaturedTeamUpcomingMatches } from './lib/featuredTeam';
 import { todayInZone } from './lib/matchTime';
-import { isTournamentOver } from './lib/tournamentStatus';
+import { isTournamentOver, firstGameDate } from './lib/tournamentStatus';
 
 const TOURNAMENT_DATA: Record<string, TournamentData> = {
   'asean-2026': aseanData as TournamentData,
   'u17-2026': u17Data as TournamentData,
+  'asian-games-2026': asianGamesData as TournamentData,
 };
 
 const TODAY = todayInZone(MELBOURNE_TIME_ZONE);
 
-const VISIBLE_TOURNAMENTS = TOURNAMENTS.filter(
+// Earliest-first; a tournament with no dated matches yet sorts last rather than crashing.
+const BY_START_DATE = [...TOURNAMENTS].sort((a, b) => {
+  const dateA = firstGameDate(TOURNAMENT_DATA[a.id]) ?? '9999-99-99';
+  const dateB = firstGameDate(TOURNAMENT_DATA[b.id]) ?? '9999-99-99';
+  return dateA.localeCompare(dateB);
+});
+
+const VISIBLE_TOURNAMENTS = BY_START_DATE.filter(
   (t) => !isTournamentOver(TOURNAMENT_DATA[t.id], TODAY),
 );
-const TAB_TOURNAMENTS = VISIBLE_TOURNAMENTS.length > 0 ? VISIBLE_TOURNAMENTS : TOURNAMENTS;
+const TAB_TOURNAMENTS = VISIBLE_TOURNAMENTS.length > 0 ? VISIBLE_TOURNAMENTS : BY_START_DATE;
 
 function readTournamentIdFromUrl(): string | null {
   const id = new URLSearchParams(window.location.search).get('t');
