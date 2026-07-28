@@ -6,7 +6,7 @@ function addDays(date: string, days: number): string {
   return instant.toISOString().slice(0, 10);
 }
 
-export function lastGameDate(data: TournamentData): string | null {
+function allGameDates(data: TournamentData): string[] {
   const dates: string[] = [];
 
   for (const group of data.groups) {
@@ -22,7 +22,17 @@ export function lastGameDate(data: TournamentData): string | null {
     }
   }
 
+  return dates;
+}
+
+export function lastGameDate(data: TournamentData): string | null {
+  const dates = allGameDates(data);
   return dates.length > 0 ? dates.reduce((max, d) => (d > max ? d : max)) : null;
+}
+
+export function firstGameDate(data: TournamentData): string | null {
+  const dates = allGameDates(data);
+  return dates.length > 0 ? dates.reduce((min, d) => (d < min ? d : min)) : null;
 }
 
 export function isTournamentOver(data: TournamentData, today: string): boolean {
