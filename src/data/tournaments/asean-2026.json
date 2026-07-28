@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-07-27T23:37:52.954Z"
+    "scrapedAt": "2026-07-28T22:37:24.006Z"
   },
   "groups": [
     {
@@ -176,6 +176,18 @@
       "name": "Group B",
       "standings": [
         {
+          "team": "Malaysia",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5,
+          "points": 6,
+          "position": 1
+        },
+        {
           "team": "Thailand",
           "played": 1,
           "won": 1,
@@ -185,53 +197,41 @@
           "goalsAgainst": 0,
           "goalDifference": 5,
           "points": 3,
-          "position": 1
-        },
-        {
-          "team": "Malaysia",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1,
-          "points": 3,
           "position": 2
         },
         {
-          "team": "Philippines",
-          "played": 0,
-          "won": 0,
+          "team": "Myanmar",
+          "played": 2,
+          "won": 1,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
+          "lost": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDifference": 2,
+          "points": 3,
           "position": 3
         },
         {
-          "team": "Myanmar",
+          "team": "Philippines",
           "played": 1,
           "won": 0,
           "drawn": 0,
           "lost": 1,
           "goalsFor": 1,
-          "goalsAgainst": 2,
-          "goalDifference": -1,
+          "goalsAgainst": 4,
+          "goalDifference": -3,
           "points": 0,
           "position": 4
         },
         {
           "team": "Laos",
-          "played": 1,
+          "played": 2,
           "won": 0,
           "drawn": 0,
-          "lost": 1,
+          "lost": 2,
           "goalsFor": 0,
-          "goalsAgainst": 5,
-          "goalDifference": -5,
+          "goalsAgainst": 9,
+          "goalDifference": -9,
           "points": 0,
           "position": 5
         }
@@ -262,20 +262,20 @@
           "time": "18:00 UTC+8",
           "homeTeam": "Philippines",
           "awayTeam": "Myanmar",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 4,
           "venue": "New Clark City Athletics Stadium, Capas",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-07-28",
           "time": "21:00 UTC+8",
           "homeTeam": "Malaysia",
           "awayTeam": "Laos",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 4,
+          "awayScore": 0,
           "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-01",
