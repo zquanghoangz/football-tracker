@@ -5,11 +5,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this is
 
 A React app that displays football tournament group-stage standings/matches and knockout
-brackets, for two tournaments at once — the 2026 ASEAN Championship and the 2026 FIFA U-17 World
-Cup — switchable via UI tabs. Each tournament is scraped from its own Wikipedia article into its
-own static JSON file by a manual script; the app just reads those files at build time — still no
-backend, no live polling, no API. See `docs/specs/2026-07-25-asean-championship-tracker-design.md`
-/ `docs/plans/2026-07-25-asean-championship-tracker-plan.md` for the original single-tournament
+brackets, for several tournaments at once — currently the 2026 ASEAN Championship, the 2026 FIFA
+U-17 World Cup, and football at the 2026 Asian Games — switchable via UI tabs ordered by each
+tournament's earliest scheduled match date (soonest-started first), not by config order. Each
+tournament is scraped from its own Wikipedia article into its own static JSON file by a manual
+script; the app just reads those files at build time — still no backend, no live polling, no API.
+See `docs/specs/2026-07-25-asean-championship-tracker-design.md` /
+`docs/plans/2026-07-25-asean-championship-tracker-plan.md` for the original single-tournament
 design, and `docs/specs/2026-07-27-multi-tournament-switcher-design.md` /
 `docs/plans/2026-07-27-multi-tournament-switcher-plan.md` for the multi-tournament switcher that
 replaced it.
@@ -81,9 +83,16 @@ Two independent halves that only communicate through the per-tournament JSON fil
 multiple tournaments simultaneously, so "switching" means either adding a new entry to run
 alongside the existing ones, or editing an existing entry — then rerun `npm run scrape`. No code
 changes needed, as long as the target Wikipedia article follows the standard tournament layout
-(`wikitable` standings + `.footballbox` matches). If a new entry adds a UI tab, also add it to
-`TOURNAMENTS` in `src/config.ts` and a static import + map entry in `App.tsx`. If the new
-tournament has different teams, also add their codes to `src/lib/teamCountry.ts`.
+(`wikitable` standings + `.footballbox` matches — a tournament whose fixtures aren't fully
+scheduled yet is fine too, e.g. missing kickoff times or day-of-month, since the UI falls back to
+showing the raw scraped string). If a new entry adds a UI tab, also add it to `TOURNAMENTS` in
+`src/config.ts` and a static import + map entry in `App.tsx` — tab order is computed automatically
+from each tournament's earliest match date (`firstGameDate` in `src/lib/tournamentStatus.ts`), so
+where you add the entry in either file doesn't matter. If the new tournament has different teams,
+add their codes to **both** `src/lib/teamCountry.ts` (ISO code lookup) and the explicit per-flag
+import list in `src/components/Flag.tsx` (it imports individual SVGs rather than the full
+flag-icons sprite, to keep the bundle small — a code missing from `Flag.tsx` silently renders no
+flag even if `teamCountry.ts` resolves it).
 
 ### Non-goals (still true as of this branch)
 
@@ -92,7 +101,16 @@ tournament has different teams, also add their codes to `src/lib/teamCountry.ts`
 ### Deployment
 
 Deployed on Vercel (`vercel-build` script in `package.json` re-runs the scraper at build time so
-production data stays fresh) with a scheduled GitHub Actions workflow
-(`.github/workflows/scheduled-redeploy.yml`) that triggers a redeploy shortly after tracked
-matches finish, so results appear without a manual rebuild. See `scripts/serve-local.ps1` (above,
-under Commands) for the local equivalent of that build.
+production data stays fresh). Two redundant triggers call the Vercel deploy hook shortly after
+tracked matches finish, so results appear without a manual rebuild — see
+`docs/specs/2026-07-29-reliable-redeploy-trigger-design.md` for why there are two:
+
+- A scheduled GitHub Actions workflow (`.github/workflows/scheduled-redeploy.yml`) — kept for
+  redundancy, but GitHub's `schedule` trigger is best-effort and can delay or skip runs for hours on
+  a low-activity repo, so it isn't relied on alone.
+- `api/check-redeploy.ts`, a Vercel Serverless Function running the same check-and-deploy logic
+  (shared via `scripts/lib/runCheck.ts`), meant to be pinged every 5–15 minutes by an external cron
+  service (e.g. cron-job.org) that actually fires on schedule. Requires `VERCEL_DEPLOY_HOOK_URL` and
+  `CRON_SECRET` set as Vercel project environment variables (not GitHub secrets).
+
+See `scripts/serve-local.ps1` (above, under Commands) for the local equivalent of that build.
