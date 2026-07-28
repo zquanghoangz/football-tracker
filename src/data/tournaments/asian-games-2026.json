@@ -1,0 +1,430 @@
+{
+  "tournament": {
+    "name": "Football at the 2026 Asian Games – Men's tournament",
+    "sourceUrl": "https://en.wikipedia.org/wiki/Football_at_the_2026_Asian_Games_–_Men's_tournament",
+    "scrapedAt": "2026-07-28T22:37:23.844Z"
+  },
+  "groups": [
+    {
+      "name": "Group A",
+      "standings": [
+        {
+          "team": "Hong Kong",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Japan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Kyrgyzstan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Thailand",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-09-16",
+          "time": "",
+          "homeTeam": "Japan",
+          "awayTeam": "Hong Kong",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-16",
+          "time": "",
+          "homeTeam": "Thailand",
+          "awayTeam": "Kyrgyzstan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "",
+          "homeTeam": "Japan",
+          "awayTeam": "Kyrgyzstan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "",
+          "homeTeam": "Thailand",
+          "awayTeam": "Hong Kong",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-23",
+          "time": "",
+          "homeTeam": "Japan",
+          "awayTeam": "Thailand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-23",
+          "time": "",
+          "homeTeam": "Kyrgyzstan",
+          "awayTeam": "Hong Kong",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "standings": [
+        {
+          "team": "China",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Iran",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "North Korea",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "United Arab Emirates",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-09-18",
+          "time": "",
+          "homeTeam": "China",
+          "awayTeam": "North Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-18",
+          "time": "",
+          "homeTeam": "United Arab Emirates",
+          "awayTeam": "Iran",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "",
+          "homeTeam": "China",
+          "awayTeam": "Iran",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "",
+          "homeTeam": "United Arab Emirates",
+          "awayTeam": "North Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-23",
+          "time": "",
+          "homeTeam": "China",
+          "awayTeam": "United Arab Emirates",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-23",
+          "time": "",
+          "homeTeam": "Iran",
+          "awayTeam": "North Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "standings": [
+        {
+          "team": "Kuwait",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Philippines",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Uzbekistan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Vietnam",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Philippines",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Philippines",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Uzbekistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09",
+          "time": "",
+          "homeTeam": "Philippines",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "standings": [
+        {
+          "team": "Qatar",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Saudi Arabia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "South Korea",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        }
+      ],
+      "matches": [
+        {
+          "date": "2026-09-15",
+          "time": "",
+          "homeTeam": "South Korea",
+          "awayTeam": "Qatar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "played": false
+        },
+        {
+          "date": "2026-09-18",
+          "time": "",
+          "homeTeam": "Saudi Arabia",
+          "awayTeam": "Qatar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-22",
+          "time": "",
+          "homeTeam": "South Korea",
+          "awayTeam": "Saudi Arabia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "played": false
+        }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": []
+  }
+}
