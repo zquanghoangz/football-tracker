@@ -2,7 +2,7 @@
   "tournament": {
     "name": "Football at the 2026 Asian Games – Men's tournament",
     "sourceUrl": "https://en.wikipedia.org/wiki/Football_at_the_2026_Asian_Games_–_Men's_tournament",
-    "scrapedAt": "2026-07-31T12:08:20.913Z"
+    "scrapedAt": "2026-07-31T14:52:31.615Z"
   },
   "groups": [
     {
@@ -61,31 +61,21 @@
         {
           "date": "2026-09-16",
           "time": "16:00 UTC+9",
-          "homeTeam": "Japan",
-          "awayTeam": "Hong Kong",
-          "homeScore": null,
-          "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
-          "played": false
-        },
-        {
-          "date": "2026-09-16",
-          "time": "16:00 UTC+9",
           "homeTeam": "Thailand",
           "awayTeam": "Kyrgyzstan",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
+          "venue": "",
           "played": false
         },
         {
-          "date": "2026-09-20",
-          "time": "16:00 UTC+9",
-          "homeTeam": "Kyrgyzstan",
-          "awayTeam": "Japan",
+          "date": "2026-09-16",
+          "time": "19:30 UTC+9",
+          "homeTeam": "Japan",
+          "awayTeam": "Hong Kong",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
+          "venue": "",
           "played": false
         },
         {
@@ -95,27 +85,37 @@
           "awayTeam": "Thailand",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "19:30 UTC+9",
+          "homeTeam": "Kyrgyzstan",
+          "awayTeam": "Japan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-23",
-          "time": "",
+          "time": "19:30 UTC+9",
           "homeTeam": "Japan",
           "awayTeam": "Thailand",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-23",
-          "time": "",
+          "time": "19:30 UTC+9",
           "homeTeam": "Kyrgyzstan",
           "awayTeam": "Hong Kong",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
+          "venue": "",
           "played": false
         }
       ]
