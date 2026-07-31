@@ -2,6 +2,7 @@ import { useState } from 'react';
 import aseanData from './data/tournaments/asean-2026.json';
 import u17Data from './data/tournaments/u17-2026.json';
 import asianGamesData from './data/tournaments/asian-games-2026.json';
+import fifaAseanCupData from './data/tournaments/fifa-asean-cup-2026.json';
 import type { TournamentData } from '../types/tournament';
 import { GroupTable } from './components/GroupTable';
 import { MatchList } from './components/MatchList';
@@ -17,6 +18,7 @@ const TOURNAMENT_DATA: Record<string, TournamentData> = {
   'asean-2026': aseanData as TournamentData,
   'u17-2026': u17Data as TournamentData,
   'asian-games-2026': asianGamesData as TournamentData,
+  'fifa-asean-cup-2026': fifaAseanCupData as TournamentData,
 };
 
 const TODAY = todayInZone(MELBOURNE_TIME_ZONE);

@@ -25,5 +25,14 @@
     "utcOffset": "+9",
     "redeployDelayMinutes": 120,
     "checkWindowMinutes": 180
+  },
+  {
+    "id": "fifa-asean-cup-2026",
+    "name": "2026 FIFA ASEAN Cup",
+    "wikipediaTitle": "2026_FIFA_ASEAN_Cup",
+    "outputFile": "src/data/tournaments/fifa-asean-cup-2026.json",
+    "utcOffset": "+7",
+    "redeployDelayMinutes": 120,
+    "checkWindowMinutes": 180
   }
 ]

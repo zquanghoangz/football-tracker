@@ -2,12 +2,24 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-07-28T22:37:24.006Z"
+    "scrapedAt": "2026-07-31T12:08:21.032Z"
   },
   "groups": [
     {
       "name": "Group A",
       "standings": [
+        {
+          "team": "Indonesia",
+          "played": 2,
+          "won": 2,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 8,
+          "goalsAgainst": 1,
+          "goalDifference": 7,
+          "points": 6,
+          "position": 1
+        },
         {
           "team": "Singapore",
           "played": 2,
@@ -18,7 +30,7 @@
           "goalsAgainst": 1,
           "goalDifference": 3,
           "points": 6,
-          "position": 1
+          "position": 2
         },
         {
           "team": "Vietnam",
@@ -29,18 +41,6 @@
           "goalsFor": 7,
           "goalsAgainst": 0,
           "goalDifference": 7,
-          "points": 3,
-          "position": 2
-        },
-        {
-          "team": "Indonesia",
-          "played": 1,
-          "won": 1,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 1,
-          "goalDifference": 4,
           "points": 3,
           "position": 3
         },
@@ -58,13 +58,13 @@
         },
         {
           "team": "Timor-Leste",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
+          "lost": 3,
           "goalsFor": 0,
-          "goalsAgainst": 9,
-          "goalDifference": -9,
+          "goalsAgainst": 12,
+          "goalDifference": -12,
           "points": 0,
           "position": 5
         }
@@ -115,10 +115,10 @@
           "time": "17:00 UTC+7",
           "homeTeam": "Timor-Leste",
           "awayTeam": "Indonesia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 3,
           "venue": "Chonburi Stadium, Chonburi, Thailand",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-07-31",

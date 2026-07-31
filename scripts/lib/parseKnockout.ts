@@ -79,6 +79,15 @@ const EMPTY_LEG: KnockoutLeg = {
   awayScore: null,
 };
 
+function ownHeadingText($: cheerio.CheerioAPI, section: unknown): string {
+  return $(section as never)
+    .children('[class^="mw-heading"]')
+    .children('h2, h3, h4, h5, h6')
+    .first()
+    .text()
+    .trim();
+}
+
 export function parseKnockout(html: string): { rounds: KnockoutRound[] } {
   const $ = cheerio.load(html);
   const knockoutHeading = $('h2')
@@ -88,30 +97,47 @@ export function parseKnockout(html: string): { rounds: KnockoutRound[] } {
 
   const rounds: KnockoutRound[] = [];
 
-  knockoutSection.children('section').each((_, roundEl) => {
-    const $round = $(roundEl);
-    const roundName = $round.children('div.mw-heading3').children('h3').first().text().trim();
-    if (!roundName) return;
+  // Round sections are named things like "Final", "Semi-finals", etc. Some
+  // tournaments split the knockout stage into divisions (e.g. "Premier
+  // Division" / "Challenge Division") that wrap round sections one level
+  // deeper, under a heading that isn't itself a round name — treat those as
+  // pass-through containers and descend into their child sections.
+  const ROUND_NAME_PATTERN = /^(final|third place(?: play-?off)?|(semi|quarter|round of \d+)[\s-]*finals?)$/i;
 
-    const summaryTable = $round.find('table.sports-series').first();
-    if (summaryTable.length === 0) return;
+  function collectRounds(container: cheerio.Cheerio<any>, divisionName: string) {
+    container.children('section').each((_, el) => {
+      const $section = $(el as never);
+      const name = ownHeadingText($, el);
 
-    const tieSummaries = parseTieSummaries($, summaryTable[0]);
-    const legs = $round
-      .find('.footballbox')
-      .map((_, box) => parseLeg($, box))
-      .get();
+      if (!ROUND_NAME_PATTERN.test(name)) {
+        collectRounds($section, name || divisionName);
+        return;
+      }
 
-    const ties: KnockoutTie[] = tieSummaries.map((summary, i) => ({
-      team1: summary.team1,
-      team2: summary.team2,
-      aggregate: summary.aggregate,
-      firstLeg: legs[i * 2] ?? EMPTY_LEG,
-      secondLeg: legs[i * 2 + 1] ?? EMPTY_LEG,
-    }));
+      const summaryTable = $section.find('table.sports-series').first();
+      if (summaryTable.length === 0) return;
 
-    rounds.push({ name: roundName, ties });
-  });
+      const qualifiedRoundName = divisionName ? `${divisionName} – ${name}` : name;
+
+      const tieSummaries = parseTieSummaries($, summaryTable[0]);
+      const legs = $section
+        .find('.footballbox')
+        .map((_, box) => parseLeg($, box))
+        .get();
+
+      const ties: KnockoutTie[] = tieSummaries.map((summary, i) => ({
+        team1: summary.team1,
+        team2: summary.team2,
+        aggregate: summary.aggregate,
+        firstLeg: legs[i * 2] ?? EMPTY_LEG,
+        secondLeg: legs[i * 2 + 1] ?? EMPTY_LEG,
+      }));
+
+      rounds.push({ name: qualifiedRoundName, ties });
+    });
+  }
+
+  collectRounds(knockoutSection, '');
 
   return { rounds };
 }

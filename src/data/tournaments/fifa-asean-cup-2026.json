@@ -1,0 +1,32 @@
+{
+  "tournament": {
+    "name": "2026 FIFA ASEAN Cup",
+    "sourceUrl": "https://en.wikipedia.org/wiki/2026_FIFA_ASEAN_Cup",
+    "scrapedAt": "2026-07-31T12:08:20.861Z"
+  },
+  "groups": [
+    {
+      "name": "Premier Division – Group A",
+      "standings": [],
+      "matches": []
+    },
+    {
+      "name": "Premier Division – Group B",
+      "standings": [],
+      "matches": []
+    },
+    {
+      "name": "Challenge Division – Group A",
+      "standings": [],
+      "matches": []
+    },
+    {
+      "name": "Challenge Division – Group B",
+      "standings": [],
+      "matches": []
+    }
+  ],
+  "knockout": {
+    "rounds": []
+  }
+}

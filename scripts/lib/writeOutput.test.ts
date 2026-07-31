@@ -35,9 +35,33 @@ test('validateTournamentData throws when there are no groups', () => {
   assert.throws(() => validateTournamentData({ ...VALID_DATA, groups: [] }), /no groups/i);
 });
 
-test('validateTournamentData throws when a group has no standings', () => {
-  const data = { ...VALID_DATA, groups: [{ ...VALID_DATA.groups[0], standings: [] }] };
+test('validateTournamentData throws when a group has matches but no standings', () => {
+  const data = {
+    ...VALID_DATA,
+    groups: [
+      {
+        ...VALID_DATA.groups[0],
+        standings: [],
+        matches: [
+          {
+            date: '2026-07-25',
+            time: '19:00',
+            homeTeam: 'Testland',
+            awayTeam: 'Otherland',
+            homeScore: 1,
+            awayScore: 0,
+            played: true,
+          },
+        ],
+      },
+    ],
+  };
   assert.throws(() => validateTournamentData(data), /no standings/i);
+});
+
+test('validateTournamentData does not throw when a group has no matches yet (fixtures not drawn)', () => {
+  const data = { ...VALID_DATA, groups: [{ ...VALID_DATA.groups[0], standings: [], matches: [] }] };
+  assert.doesNotThrow(() => validateTournamentData(data));
 });
 
 test('validateTournamentData does not throw when there are no knockout rounds', () => {

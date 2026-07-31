@@ -8,7 +8,10 @@ export function validateTournamentData(data: TournamentData): void {
     );
   }
   for (const group of data.groups) {
-    if (group.standings.length === 0) {
+    // A group with no matches yet (fixtures not drawn/played) legitimately has
+    // no standings rows, since standings are derived from matches rather than
+    // scraped directly — mirrors how an empty knockout.rounds is also valid.
+    if (group.standings.length === 0 && group.matches.length > 0) {
       throw new Error(`Group "${group.name}" has no standings rows — check the page structure`);
     }
   }
