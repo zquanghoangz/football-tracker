@@ -2,7 +2,7 @@
   "tournament": {
     "name": "Football at the 2026 Asian Games – Men's tournament",
     "sourceUrl": "https://en.wikipedia.org/wiki/Football_at_the_2026_Asian_Games_–_Men's_tournament",
-    "scrapedAt": "2026-07-31T14:52:31.615Z"
+    "scrapedAt": "2026-08-01T21:10:12.210Z"
   },
   "groups": [
     {
@@ -174,63 +174,63 @@
       ],
       "matches": [
         {
-          "date": "2026-09-18",
-          "time": "",
-          "homeTeam": "China",
-          "awayTeam": "North Korea",
-          "homeScore": null,
-          "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
-          "played": false
-        },
-        {
-          "date": "2026-09-18",
-          "time": "",
+          "date": "2026-09-16",
+          "time": "14:00 UTC+9",
           "homeTeam": "United Arab Emirates",
           "awayTeam": "Iran",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
+          "venue": "",
           "played": false
         },
         {
-          "date": "2026-09-20",
-          "time": "",
+          "date": "2026-09-16",
+          "time": "19:00 UTC+9",
           "homeTeam": "China",
-          "awayTeam": "Iran",
-          "homeScore": null,
-          "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
-          "played": false
-        },
-        {
-          "date": "2026-09-20",
-          "time": "",
-          "homeTeam": "United Arab Emirates",
           "awayTeam": "North Korea",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "14:00 UTC+9",
+          "homeTeam": "Iran",
+          "awayTeam": "China",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-20",
+          "time": "19:00 UTC+9",
+          "homeTeam": "North Korea",
+          "awayTeam": "United Arab Emirates",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-23",
-          "time": "",
+          "time": "14:30 UTC+9",
           "homeTeam": "China",
           "awayTeam": "United Arab Emirates",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Toyota Stadium, Toyota",
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-23",
-          "time": "",
+          "time": "14:30 UTC+9",
           "homeTeam": "Iran",
           "awayTeam": "North Korea",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Wave Stadium, Kariya",
+          "venue": "",
           "played": false
         }
       ]
@@ -290,62 +290,62 @@
       "matches": [
         {
           "date": "2026-09-15",
-          "time": "21:00 UTC+9",
-          "homeTeam": "Vietnam",
-          "awayTeam": "Kuwait",
-          "homeScore": null,
-          "awayScore": null,
-          "venue": "CS Asset Minato Soccer Stadium, Nagoya",
-          "played": false
-        },
-        {
-          "date": "2026-09",
-          "time": "",
+          "time": "15:30 UTC+9",
           "homeTeam": "Uzbekistan",
           "awayTeam": "Philippines",
           "homeScore": null,
           "awayScore": null,
-          "venue": "CS Asset Minato Soccer Stadium, Nagoya",
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2026-09-15",
+          "time": "19:00 UTC+9",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-18",
-          "time": "17:30 UTC+9",
-          "homeTeam": "Vietnam",
-          "awayTeam": "Philippines",
+          "time": "15:30 UTC+9",
+          "homeTeam": "Philippines",
+          "awayTeam": "Vietnam",
           "homeScore": null,
           "awayScore": null,
-          "venue": "CS Asset Minato Soccer Stadium, Nagoya",
+          "venue": "",
           "played": false
         },
         {
-          "date": "2026-09",
-          "time": "",
-          "homeTeam": "Uzbekistan",
-          "awayTeam": "Kuwait",
+          "date": "2026-09-18",
+          "time": "19:00 UTC+9",
+          "homeTeam": "Kuwait",
+          "awayTeam": "Uzbekistan",
           "homeScore": null,
           "awayScore": null,
-          "venue": "CS Asset Minato Soccer Stadium, Nagoya",
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-22",
-          "time": "16:00 UTC+9",
+          "time": "14:00 UTC+9",
           "homeTeam": "Vietnam",
           "awayTeam": "Uzbekistan",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "venue": "",
           "played": false
         },
         {
-          "date": "2026-09",
-          "time": "",
+          "date": "2026-09-22",
+          "time": "14:00 UTC+9",
           "homeTeam": "Philippines",
           "awayTeam": "Kuwait",
           "homeScore": null,
           "awayScore": null,
-          "venue": "CS Asset Minato Soccer Stadium, Nagoya",
+          "venue": "",
           "played": false
         }
       ]
@@ -393,32 +393,32 @@
       "matches": [
         {
           "date": "2026-09-15",
-          "time": "",
-          "homeTeam": "South Korea",
-          "awayTeam": "Qatar",
+          "time": "19:30 UTC+9",
+          "homeTeam": "Qatar",
+          "awayTeam": "South Korea",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-18",
-          "time": "",
+          "time": "19:30 UTC+9",
           "homeTeam": "Saudi Arabia",
           "awayTeam": "Qatar",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "venue": "",
           "played": false
         },
         {
           "date": "2026-09-22",
-          "time": "",
+          "time": "19:00 UTC+9",
           "homeTeam": "South Korea",
           "awayTeam": "Saudi Arabia",
           "homeScore": null,
           "awayScore": null,
-          "venue": "Paloma Mizuho Rugby Stadium, Nagoya",
+          "venue": "",
           "played": false
         }
       ]

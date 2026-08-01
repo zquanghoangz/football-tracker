@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-07-31T14:52:31.710Z"
+    "scrapedAt": "2026-08-01T21:10:12.043Z"
   },
   "groups": [
     {
@@ -87,7 +87,7 @@
           "awayTeam": "Vietnam",
           "homeScore": 0,
           "awayScore": 7,
-          "venue": "Chonburi Stadium, Chonburi, Thailand",
+          "venue": "Chonburi Stadium, Chonburi",
           "played": true
         },
         {
@@ -117,7 +117,7 @@
           "awayTeam": "Indonesia",
           "homeScore": 0,
           "awayScore": 3,
-          "venue": "Chonburi Stadium, Chonburi, Thailand",
+          "venue": "Chonburi Stadium, Chonburi",
           "played": true
         },
         {
@@ -176,27 +176,27 @@
       "name": "Group B",
       "standings": [
         {
-          "team": "Malaysia",
+          "team": "Thailand",
           "played": 2,
           "won": 2,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 6,
-          "goalsAgainst": 1,
-          "goalDifference": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 0,
+          "goalDifference": 7,
           "points": 6,
           "position": 1
         },
         {
-          "team": "Thailand",
-          "played": 1,
-          "won": 1,
+          "team": "Malaysia",
+          "played": 3,
+          "won": 2,
           "drawn": 0,
-          "lost": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 0,
-          "goalDifference": 5,
-          "points": 3,
+          "lost": 1,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDifference": 3,
+          "points": 6,
           "position": 2
         },
         {
@@ -213,25 +213,25 @@
         },
         {
           "team": "Philippines",
-          "played": 1,
-          "won": 0,
+          "played": 2,
+          "won": 1,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 4,
-          "goalDifference": -3,
-          "points": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "goalDifference": 0,
+          "points": 3,
           "position": 4
         },
         {
           "team": "Laos",
-          "played": 2,
+          "played": 3,
           "won": 0,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 9,
-          "goalDifference": -9,
+          "lost": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 13,
+          "goalDifference": -12,
           "points": 0,
           "position": 5
         }
@@ -282,20 +282,20 @@
           "time": "17:00 UTC+7",
           "homeTeam": "Laos",
           "awayTeam": "Philippines",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 4,
           "venue": "New Laos National Stadium, Vientiane",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-01",
           "time": "20:00 UTC+7",
           "homeTeam": "Thailand",
           "awayTeam": "Malaysia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 0,
           "venue": "Rajamangala Stadium, Bangkok",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-04",
