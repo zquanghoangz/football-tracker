@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-01T21:10:12.043Z"
+    "scrapedAt": "2026-08-03T14:40:10.493Z"
   },
   "groups": [
     {
@@ -46,25 +46,25 @@
         },
         {
           "team": "Cambodia",
-          "played": 2,
-          "won": 0,
+          "played": 3,
+          "won": 1,
           "drawn": 0,
           "lost": 2,
-          "goalsFor": 2,
+          "goalsFor": 5,
           "goalsAgainst": 7,
-          "goalDifference": -5,
-          "points": 0,
+          "goalDifference": -2,
+          "points": 3,
           "position": 4
         },
         {
           "team": "Timor-Leste",
-          "played": 3,
+          "played": 4,
           "won": 0,
           "drawn": 0,
-          "lost": 3,
+          "lost": 4,
           "goalsFor": 0,
-          "goalsAgainst": 12,
-          "goalDifference": -12,
+          "goalsAgainst": 15,
+          "goalDifference": -15,
           "points": 0,
           "position": 5
         }
@@ -135,10 +135,10 @@
           "time": "17:30 UTC+7",
           "homeTeam": "Cambodia",
           "awayTeam": "Timor-Leste",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 0,
           "venue": "Morodok Techo National Stadium, Phnom Penh",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-03",
