@@ -2,12 +2,24 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-03T14:40:10.493Z"
+    "scrapedAt": "2026-08-03T15:27:13.854Z"
   },
   "groups": [
     {
       "name": "Group A",
       "standings": [
+        {
+          "team": "Vietnam",
+          "played": 3,
+          "won": 2,
+          "drawn": 1,
+          "lost": 0,
+          "goalsFor": 10,
+          "goalsAgainst": 0,
+          "goalDifference": 10,
+          "points": 7,
+          "position": 1
+        },
         {
           "team": "Singapore",
           "played": 3,
@@ -18,30 +30,18 @@
           "goalsAgainst": 1,
           "goalDifference": 3,
           "points": 7,
-          "position": 1
-        },
-        {
-          "team": "Indonesia",
-          "played": 2,
-          "won": 2,
-          "drawn": 0,
-          "lost": 0,
-          "goalsFor": 8,
-          "goalsAgainst": 1,
-          "goalDifference": 7,
-          "points": 6,
           "position": 2
         },
         {
-          "team": "Vietnam",
-          "played": 2,
-          "won": 1,
-          "drawn": 1,
-          "lost": 0,
-          "goalsFor": 7,
-          "goalsAgainst": 0,
-          "goalDifference": 7,
-          "points": 4,
+          "team": "Indonesia",
+          "played": 3,
+          "won": 2,
+          "drawn": 0,
+          "lost": 1,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "goalDifference": 4,
+          "points": 6,
           "position": 3
         },
         {
@@ -145,10 +145,10 @@
           "time": "20:30 UTC+7",
           "homeTeam": "Indonesia",
           "awayTeam": "Vietnam",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 0,
+          "awayScore": 3,
           "venue": "Pakansari Stadium, Bogor",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-07",
