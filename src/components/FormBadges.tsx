@@ -16,7 +16,7 @@ const LABELS: Record<FormResult, string> = {
 
 export function FormBadges({ form }: { form: FormResult[] }) {
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="flex items-center justify-center gap-1 min-w-[88px]">
       {form.map((result, i) => (
         <span
           key={i}
