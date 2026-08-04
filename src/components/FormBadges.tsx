@@ -16,11 +16,11 @@ const LABELS: Record<FormResult, string> = {
 
 export function FormBadges({ form }: { form: FormResult[] }) {
   return (
-    <div className="flex items-center justify-center gap-1 min-w-[88px]">
+    <div className="flex items-center justify-center gap-0.5">
       {form.map((result, i) => (
         <span
           key={i}
-          className={`flex h-4 w-4 items-center justify-center rounded-full border text-[9px] font-bold leading-none ${STYLES[result]}`}
+          className={`flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full border text-[8px] font-bold leading-none ${STYLES[result]}`}
         >
           {LABELS[result]}
         </span>

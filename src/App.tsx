@@ -109,7 +109,7 @@ function App() {
           {tournamentData.groups.map((group) => (
             <section
               key={group.name}
-              className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 shadow-sm sm:p-5"
+              className="min-w-0 rounded-xl border border-slate-800 bg-slate-900/60 p-4 shadow-sm sm:p-5"
             >
               <h2 className="mb-3 text-base font-bold text-slate-100">{group.name}</h2>
               <GroupTable
