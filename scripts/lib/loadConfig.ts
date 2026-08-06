@@ -6,8 +6,6 @@ export interface TournamentConfig {
   wikipediaTitle: string;
   outputFile: string;
   utcOffset: string;
-  redeployDelayMinutes: number;
-  checkWindowMinutes: number;
 }
 
 export function loadConfigs(configPath: string): TournamentConfig[] {

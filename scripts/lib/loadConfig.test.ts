@@ -20,8 +20,6 @@ test('loadConfigs parses an array of tournament configs', () => {
       wikipediaTitle: '2026_ASEAN_Championship',
       outputFile: 'src/data/tournaments/asean-2026.json',
       utcOffset: '+7',
-      redeployDelayMinutes: 120,
-      checkWindowMinutes: 30,
     },
     {
       id: 'u17-2026',
@@ -29,8 +27,6 @@ test('loadConfigs parses an array of tournament configs', () => {
       wikipediaTitle: '2026_FIFA_U-17_World_Cup',
       outputFile: 'src/data/tournaments/u17-2026.json',
       utcOffset: '+3',
-      redeployDelayMinutes: 120,
-      checkWindowMinutes: 30,
     },
   ]);
 
@@ -48,8 +44,6 @@ test('loadConfigs throws if a config entry is missing an id', () => {
       wikipediaTitle: '2026_ASEAN_Championship',
       outputFile: 'src/data/tournaments/asean-2026.json',
       utcOffset: '+7',
-      redeployDelayMinutes: 120,
-      checkWindowMinutes: 30,
     },
   ]);
 
@@ -63,8 +57,6 @@ test('loadConfigs throws if a config entry is missing a utcOffset', () => {
       name: 'ASEAN Championship',
       wikipediaTitle: '2026_ASEAN_Championship',
       outputFile: 'src/data/tournaments/asean-2026.json',
-      redeployDelayMinutes: 120,
-      checkWindowMinutes: 30,
     },
   ]);
 

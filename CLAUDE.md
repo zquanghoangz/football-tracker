@@ -79,7 +79,7 @@ Two independent halves that only communicate through the per-tournament JSON fil
 ### Switching to a different tournament
 
 `config/tournaments.json` is an array, one entry per tournament (`id`, `name`, `wikipediaTitle`,
-`outputFile`, `utcOffset`, `redeployDelayMinutes`, `checkWindowMinutes`). The app now supports
+`outputFile`, `utcOffset`). The app now supports
 multiple tournaments simultaneously, so "switching" means either adding a new entry to run
 alongside the existing ones, or editing an existing entry — then rerun `npm run scrape`. No code
 changes needed, as long as the target Wikipedia article follows the standard tournament layout
@@ -100,17 +100,13 @@ flag even if `teamCountry.ts` resolves it).
 
 ### Deployment
 
-Deployed on Vercel (`vercel-build` script in `package.json` re-runs the scraper at build time so
-production data stays fresh). Two redundant triggers call the Vercel deploy hook shortly after
-tracked matches finish, so results appear without a manual rebuild — see
-`docs/specs/2026-07-29-reliable-redeploy-trigger-design.md` for why there are two:
+The scheduled GitHub Actions workflow (`.github/workflows/scheduled-redeploy.yml`) runs at minutes
+17 and 47 UTC, scrapes every tournament, and commits only real changes under
+`src/data/tournaments` to `master`. Timestamp-only `scrapedAt` diffs are ignored. Vercel deploys
+the resulting push through its Git integration; no deploy hook is used.
 
-- A scheduled GitHub Actions workflow (`.github/workflows/scheduled-redeploy.yml`) — kept for
-  redundancy, but GitHub's `schedule` trigger is best-effort and can delay or skip runs for hours on
-  a low-activity repo, so it isn't relied on alone.
-- `api/check-redeploy.ts`, a Vercel Serverless Function running the same check-and-deploy logic
-  (shared via `scripts/lib/runCheck.ts`), meant to be pinged every 5–15 minutes by an external cron
-  service (e.g. cron-job.org) that actually fires on schedule. Requires `VERCEL_DEPLOY_HOOK_URL` and
-  `CRON_SECRET` set as Vercel project environment variables (not GitHub secrets).
+The workflow requires no GitHub Actions secrets or variables. It uses the built-in `GITHUB_TOKEN`
+with `contents: write` permission. The `vercel-build` script in `package.json` also re-runs the
+scraper when Vercel builds.
 
 See `scripts/serve-local.ps1` (above, under Commands) for the local equivalent of that build.

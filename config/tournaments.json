@@ -4,35 +4,27 @@
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "wikipediaTitle": "2026_ASEAN_Championship",
     "outputFile": "src/data/tournaments/asean-2026.json",
-    "utcOffset": "+7",
-    "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 180
+    "utcOffset": "+7"
   },
   {
     "id": "u17-2026",
     "name": "2026 FIFA U-17 World Cup",
     "wikipediaTitle": "2026_FIFA_U-17_World_Cup",
     "outputFile": "src/data/tournaments/u17-2026.json",
-    "utcOffset": "+3",
-    "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 180
+    "utcOffset": "+3"
   },
   {
     "id": "asian-games-2026",
     "name": "Football at the 2026 Asian Games – Men's tournament",
     "wikipediaTitle": "Football_at_the_2026_Asian_Games_–_Men's_tournament",
     "outputFile": "src/data/tournaments/asian-games-2026.json",
-    "utcOffset": "+9",
-    "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 180
+    "utcOffset": "+9"
   },
   {
     "id": "fifa-asean-cup-2026",
     "name": "2026 FIFA ASEAN Cup",
     "wikipediaTitle": "2026_FIFA_ASEAN_Cup",
     "outputFile": "src/data/tournaments/fifa-asean-cup-2026.json",
-    "utcOffset": "+7",
-    "redeployDelayMinutes": 120,
-    "checkWindowMinutes": 180
+    "utcOffset": "+7"
   }
 ]

@@ -62,7 +62,15 @@ The React app is built with Vite + TypeScript + Tailwind.
 
 ## Deployment
 
-The project includes a `vercel-build` script that runs the scraper before building.
+GitHub Actions refreshes the static tournament JSON every 30 minutes, at minutes 17 and 47 UTC.
+It commits and pushes `src/data/tournaments` to `master` only when tournament data changed; a new
+`scrapedAt` timestamp by itself is ignored. Vercel then deploys that push through its Git
+integration.
+
+No GitHub Actions secrets or variables are required. The workflow uses the repository's built-in
+`GITHUB_TOKEN` with `contents: write` permission.
+
+The project also includes a `vercel-build` script that runs the scraper before building.
 
 ```bash
 npm run vercel-build

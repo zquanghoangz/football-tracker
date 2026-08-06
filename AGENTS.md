@@ -30,7 +30,7 @@ Tests exist in both `scripts/` and `src/`. Confirm the active Node version suppo
 - `src/App.tsx` statically imports each tournament JSON file. Tournament tabs come from `src/config.ts`, sort by earliest match, and hide completed tournaments when alternatives remain.
 - Match time parsing must honor the scraped explicit UTC offset and display correctly in configured IANA time zones, including DST and half-hour offsets.
 - Flag rendering requires both a team-to-country mapping in `src/lib/teamCountry.ts` and a corresponding explicit SVG import in `src/components/Flag.tsx`.
-- Deployment refreshes data through `vercel-build`. `.github/workflows/scheduled-redeploy.yml` runs `scripts/checkDeployTrigger.ts` and calls the Vercel deploy hook when a configured post-match window matches.
+- `.github/workflows/scheduled-redeploy.yml` refreshes static tournament JSON every 30 minutes and pushes real data changes to `master`; Vercel deploys that push through its Git integration.
 
 ## Working rules
 
