@@ -12,14 +12,14 @@ export function parseFootballboxMatch($: cheerio.CheerioAPI, box: unknown): Matc
   const homeTeam = $box.find('th.fhome a').first().text().trim();
   const awayTeam = $box.find('th.faway a').first().text().trim();
   const scoreText = $box.find('th.fscore').first().text().trim();
-  const played = /\d/.test(scoreText);
+  const scoreMatch = scoreText.match(/^(\d+)\s*[–-]\s*(\d+)/);
+  const played = scoreMatch !== null;
 
   let homeScore: number | null = null;
   let awayScore: number | null = null;
-  if (played) {
-    const [home, away] = scoreText.split(/[–-]/).map((s) => s.trim());
-    homeScore = parseInt(home, 10);
-    awayScore = parseInt(away, 10);
+  if (scoreMatch) {
+    homeScore = Number(scoreMatch[1]);
+    awayScore = Number(scoreMatch[2]);
   }
 
   const venue = $box

@@ -50,7 +50,16 @@ export interface KnockoutRound {
 }
 
 export interface TournamentData {
-  tournament: { name: string; sourceUrl: string; scrapedAt: string };
+  tournament: {
+    name: string;
+    sourceUrl: string;
+    scrapedAt: string;
+    fixturesStatus?: 'pending';
+    sourceLabel?: string;
+    scheduleWindow?: string;
+    statusMessage?: string;
+    participants?: string[];
+  };
   groups: GroupData[];
   knockout: { rounds: KnockoutRound[] };
 }

@@ -35,6 +35,16 @@ test('validateTournamentData throws when there are no groups', () => {
   assert.throws(() => validateTournamentData({ ...VALID_DATA, groups: [] }), /no groups/i);
 });
 
+test('validateTournamentData accepts no groups while official fixtures are pending', () => {
+  assert.doesNotThrow(() =>
+    validateTournamentData({
+      ...VALID_DATA,
+      tournament: { ...VALID_DATA.tournament, fixturesStatus: 'pending' },
+      groups: [],
+    }),
+  );
+});
+
 test('validateTournamentData throws when a group has matches but no standings', () => {
   const data = {
     ...VALID_DATA,

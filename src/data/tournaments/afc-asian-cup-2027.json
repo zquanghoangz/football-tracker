@@ -1,0 +1,702 @@
+{
+  "tournament": {
+    "name": "2027 AFC Asian Cup",
+    "sourceUrl": "https://en.wikipedia.org/wiki/2027_AFC_Asian_Cup",
+    "scrapedAt": "2026-08-06T19:24:36.415Z"
+  },
+  "groups": [
+    {
+      "name": "Group A",
+      "standings": [
+        {
+          "team": "Kuwait",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Oman",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Palestine",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Saudi Arabia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-07",
+          "time": "",
+          "homeTeam": "Saudi Arabia",
+          "awayTeam": "Palestine",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-08",
+          "time": "",
+          "homeTeam": "Oman",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-12",
+          "time": "",
+          "homeTeam": "Oman",
+          "awayTeam": "Saudi Arabia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-12",
+          "time": "",
+          "homeTeam": "Palestine",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-17",
+          "time": "",
+          "homeTeam": "Oman",
+          "awayTeam": "Palestine",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-17",
+          "time": "",
+          "homeTeam": "Saudi Arabia",
+          "awayTeam": "Kuwait",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "standings": [
+        {
+          "team": "Bahrain",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Jordan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "North Korea",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Uzbekistan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-08",
+          "time": "",
+          "homeTeam": "Bahrain",
+          "awayTeam": "North Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-08",
+          "time": "",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Jordan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-13",
+          "time": "",
+          "homeTeam": "North Korea",
+          "awayTeam": "Uzbekistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-13",
+          "time": "",
+          "homeTeam": "Jordan",
+          "awayTeam": "Bahrain",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-18",
+          "time": "",
+          "homeTeam": "North Korea",
+          "awayTeam": "Jordan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-18",
+          "time": "",
+          "homeTeam": "Uzbekistan",
+          "awayTeam": "Bahrain",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "standings": [
+        {
+          "team": "China",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Iran",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Kyrgyzstan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Syria",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-09",
+          "time": "",
+          "homeTeam": "Syria",
+          "awayTeam": "Kyrgyzstan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-09",
+          "time": "",
+          "homeTeam": "Iran",
+          "awayTeam": "China",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-13",
+          "time": "",
+          "homeTeam": "Kyrgyzstan",
+          "awayTeam": "Iran",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-14",
+          "time": "",
+          "homeTeam": "China",
+          "awayTeam": "Syria",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-18",
+          "time": "",
+          "homeTeam": "Iran",
+          "awayTeam": "Syria",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-18",
+          "time": "",
+          "homeTeam": "Kyrgyzstan",
+          "awayTeam": "China",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "standings": [
+        {
+          "team": "Australia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Iraq",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Singapore",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Tajikistan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-09",
+          "time": "",
+          "homeTeam": "Australia",
+          "awayTeam": "Singapore",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-10",
+          "time": "",
+          "homeTeam": "Tajikistan",
+          "awayTeam": "Iraq",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-14",
+          "time": "",
+          "homeTeam": "Iraq",
+          "awayTeam": "Australia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-14",
+          "time": "",
+          "homeTeam": "Singapore",
+          "awayTeam": "Tajikistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-19",
+          "time": "",
+          "homeTeam": "Australia",
+          "awayTeam": "Tajikistan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-19",
+          "time": "",
+          "homeTeam": "Iraq",
+          "awayTeam": "Singapore",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group E",
+      "standings": [
+        {
+          "team": "South Korea",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "United Arab Emirates",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Vietnam",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Yemen",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-10",
+          "time": "",
+          "homeTeam": "South Korea",
+          "awayTeam": "Yemen",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-10",
+          "time": "",
+          "homeTeam": "United Arab Emirates",
+          "awayTeam": "Vietnam",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-15",
+          "time": "",
+          "homeTeam": "Yemen",
+          "awayTeam": "United Arab Emirates",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-15",
+          "time": "",
+          "homeTeam": "Vietnam",
+          "awayTeam": "South Korea",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-20",
+          "time": "",
+          "homeTeam": "South Korea",
+          "awayTeam": "United Arab Emirates",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-20",
+          "time": "",
+          "homeTeam": "Vietnam",
+          "awayTeam": "Yemen",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    },
+    {
+      "name": "Group F",
+      "standings": [
+        {
+          "team": "Indonesia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 1
+        },
+        {
+          "team": "Japan",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 2
+        },
+        {
+          "team": "Qatar",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 3
+        },
+        {
+          "team": "Thailand",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 0,
+          "position": 4
+        }
+      ],
+      "matches": [
+        {
+          "date": "2027-01-11",
+          "time": "",
+          "homeTeam": "Qatar",
+          "awayTeam": "Thailand",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-11",
+          "time": "",
+          "homeTeam": "Japan",
+          "awayTeam": "Indonesia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-16",
+          "time": "",
+          "homeTeam": "Thailand",
+          "awayTeam": "Japan",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-16",
+          "time": "",
+          "homeTeam": "Indonesia",
+          "awayTeam": "Qatar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-20",
+          "time": "",
+          "homeTeam": "Japan",
+          "awayTeam": "Qatar",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        },
+        {
+          "date": "2027-01-20",
+          "time": "",
+          "homeTeam": "Thailand",
+          "awayTeam": "Indonesia",
+          "homeScore": null,
+          "awayScore": null,
+          "venue": "",
+          "played": false
+        }
+      ]
+    }
+  ],
+  "knockout": {
+    "rounds": []
+  }
+}

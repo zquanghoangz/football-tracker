@@ -14,6 +14,8 @@ A lightweight static React app for tracking football tournament group standings,
 - 2026 ASEAN Championship
 - 2026 FIFA U-17 World Cup
 - 2026 Asian Games football
+- 2026 FIFA ASEAN Cup
+- 2027 AFC Asian Cup
 
 ## Architecture
 
@@ -31,8 +33,8 @@ The scraper is a standalone Node + TypeScript script under `scripts/`.
 
 The React app is built with Vite + TypeScript + Tailwind.
 
-- `src/App.tsx` imports static tournament JSON files and renders the selected tournament
-- `src/config.ts` defines UI tabs and featured team metadata
+- `src/App.tsx` automatically imports generated tournament JSON files and renders the selected tournament
+- `config/tournaments.json` is the single registry for scraper and UI metadata
 - `src/lib/matchTime.ts` parses scraped kickoff strings and displays them in configured time zones
 - `src/lib/featuredTeam.ts` derives upcoming spotlight matches for featured teams
 - `src/lib/teamCountry.ts` maps team names to ISO country codes for flag rendering
@@ -50,10 +52,14 @@ The React app is built with Vite + TypeScript + Tailwind.
 ## Adding or updating a tournament
 
 1. Add or update an entry in `config/tournaments.json`
-2. If the tournament is new, add a matching entry in `src/config.ts`
-3. Add a static import and map entry for the tournament JSON in `src/App.tsx`
-4. If the tournament has new team names, add ISO codes to `src/lib/teamCountry.ts` and import the matching flags in `src/components/Flag.tsx`
-5. Run `npm run scrape`
+2. If the tournament has new team names, add ISO codes to `src/lib/teamCountry.ts` and import the matching flags in `src/components/Flag.tsx`
+3. Run `npm run scrape`
+
+The output path is derived from the tournament ID, and the app automatically discovers the generated file.
+Set `fixturesStatus` to `pending` for an announced tournament whose official fixtures are not public yet;
+the scraper will preserve an honest upcoming state instead of ingesting speculative schedules.
+Optional `participants`, `scheduleWindow`, `sourceUrl`, and `sourceLabel` fields provide a useful
+pre-fixture page that automatically gives way to normal standings and schedules when the status is removed.
 
 ## Notes
 

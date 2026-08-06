@@ -7,7 +7,28 @@ import { writeTournamentData } from './lib/writeOutput.ts';
 import type { TournamentData } from '../types/tournament.ts';
 
 async function scrapeOne(config: ReturnType<typeof loadConfigs>[number]): Promise<void> {
-  const sourceUrl = `https://en.wikipedia.org/wiki/${config.wikipediaTitle}`;
+  const sourceUrl = config.sourceUrl ?? `https://en.wikipedia.org/wiki/${config.wikipediaTitle}`;
+
+  if (config.fixturesStatus === 'pending') {
+    const data: TournamentData = {
+      tournament: {
+        name: config.name,
+        sourceUrl,
+        scrapedAt: new Date().toISOString(),
+        fixturesStatus: 'pending',
+        sourceLabel: config.sourceLabel,
+        scheduleWindow: config.scheduleWindow,
+        statusMessage: config.statusMessage,
+        participants: config.participants,
+      },
+      groups: [],
+      knockout: { rounds: [] },
+    };
+    writeTournamentData(config.outputFile, data);
+    console.log(`Wrote ${config.outputFile}: awaiting official fixtures`);
+    return;
+  }
+
   console.log(`Fetching ${sourceUrl} ...`);
   const html = await fetchArticleHtml(config.wikipediaTitle);
 

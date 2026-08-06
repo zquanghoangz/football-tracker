@@ -21,6 +21,15 @@ const FIXTURE = `
 </tr><tr class="fgoals"><td class="fhgoal"></td><td><a href="https://example.com/r2" class="external text">Report</a></td><td class="fagoal"></td></tr></tbody></table>
 <div class="fright"><div itemprop="location"><span itemprop="name address"><a href="/wiki/Jalan_Besar">Jalan Besar Stadium</a>, <a href="/wiki/Kallang">Kallang</a><sup class="mw-ref reference">[11]</sup></span></div></div>
 </div>
+<div class="footballbox" style="color:inherit">
+<div class="fleft"><time><div class="fdate"><span class="bday">2027-01-07</span></div></time></div>
+<table class="fevent"><tbody><tr itemprop="name">
+<th class="fhome"><a href="/wiki/Saudi_Arabia">Saudi Arabia</a></th>
+<th class="fscore">v<sup class="mw-ref reference">[12]</sup></th>
+<th class="faway"><a href="/wiki/Palestine">Palestine</a></th>
+</tr></tbody></table>
+<div class="fright"></div>
+</div>
 `;
 
 test('parses a played match', () => {
@@ -49,4 +58,11 @@ test('parses an unplayed match (score cell is "v")', () => {
     venue: 'Jalan Besar Stadium, Kallang',
     played: false,
   });
+});
+
+test('does not treat citation digits as a played score', () => {
+  const matches = parseFootballboxMatches(FIXTURE);
+  assert.equal(matches[2].played, false);
+  assert.equal(matches[2].homeScore, null);
+  assert.equal(matches[2].awayScore, null);
 });

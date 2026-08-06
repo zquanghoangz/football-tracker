@@ -2,7 +2,7 @@ import { renameSync, writeFileSync } from 'node:fs';
 import type { TournamentData } from '../../types/tournament.ts';
 
 export function validateTournamentData(data: TournamentData): void {
-  if (data.groups.length === 0) {
+  if (data.groups.length === 0 && data.tournament.fixturesStatus !== 'pending') {
     throw new Error(
       'No groups found on the page — check the Wikipedia article structure or wikipediaTitle in config/tournaments.json',
     );

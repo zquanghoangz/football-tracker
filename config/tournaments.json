@@ -1,30 +1,60 @@
 [
   {
     "id": "asean-2026",
+    "label": "ASEAN 2026",
+    "featuredTeam": "Vietnam",
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "wikipediaTitle": "2026_ASEAN_Championship",
-    "outputFile": "src/data/tournaments/asean-2026.json",
     "utcOffset": "+7"
   },
   {
     "id": "u17-2026",
+    "label": "U-17 2026",
+    "featuredTeam": "Vietnam",
     "name": "2026 FIFA U-17 World Cup",
     "wikipediaTitle": "2026_FIFA_U-17_World_Cup",
-    "outputFile": "src/data/tournaments/u17-2026.json",
     "utcOffset": "+3"
   },
   {
     "id": "asian-games-2026",
+    "label": "Asian Games",
+    "featuredTeam": "Vietnam",
     "name": "Football at the 2026 Asian Games – Men's tournament",
     "wikipediaTitle": "Football_at_the_2026_Asian_Games_–_Men's_tournament",
-    "outputFile": "src/data/tournaments/asian-games-2026.json",
     "utcOffset": "+9"
   },
   {
     "id": "fifa-asean-cup-2026",
+    "label": "FIFA ASEAN Cup",
+    "featuredTeam": "Vietnam",
     "name": "2026 FIFA ASEAN Cup",
     "wikipediaTitle": "2026_FIFA_ASEAN_Cup",
-    "outputFile": "src/data/tournaments/fifa-asean-cup-2026.json",
-    "utcOffset": "+7"
+    "utcOffset": "+7",
+    "fixturesStatus": "pending",
+    "sourceUrl": "https://www.fifa.com/",
+    "sourceLabel": "FIFA",
+    "scheduleWindow": "September–October 2026",
+    "statusMessage": "FIFA has approved the inaugural competition for all ASEAN FIFA member associations, but the official draw, format, venues and exact fixtures have not yet been published.",
+    "participants": [
+      "Brunei",
+      "Cambodia",
+      "Indonesia",
+      "Laos",
+      "Malaysia",
+      "Myanmar",
+      "Philippines",
+      "Singapore",
+      "Thailand",
+      "Timor-Leste",
+      "Vietnam"
+    ]
+  },
+  {
+    "id": "afc-asian-cup-2027",
+    "label": "AFC Asian Cup",
+    "featuredTeam": "Vietnam",
+    "name": "2027 AFC Asian Cup",
+    "wikipediaTitle": "2027_AFC_Asian_Cup",
+    "utcOffset": "+3"
   }
 ]

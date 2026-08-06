@@ -1,25 +1,33 @@
 import { useState } from 'react';
-import aseanData from './data/tournaments/asean-2026.json';
-import u17Data from './data/tournaments/u17-2026.json';
-import asianGamesData from './data/tournaments/asian-games-2026.json';
-import fifaAseanCupData from './data/tournaments/fifa-asean-cup-2026.json';
 import type { TournamentData } from '../types/tournament';
 import { GroupTable } from './components/GroupTable';
 import { MatchList } from './components/MatchList';
 import { KnockoutBracket } from './components/KnockoutBracket';
 import { FeaturedTeamSpotlight } from './components/FeaturedTeamSpotlight';
 import { FootballLogo } from './components/FootballLogo';
+import { Flag } from './components/Flag';
 import { TOURNAMENTS, MELBOURNE_TIME_ZONE } from './config';
 import { getFeaturedTeamUpcomingMatches } from './lib/featuredTeam';
 import { todayInZone } from './lib/matchTime';
 import { isTournamentOver, firstGameDate } from './lib/tournamentStatus';
 
-const TOURNAMENT_DATA: Record<string, TournamentData> = {
-  'asean-2026': aseanData as TournamentData,
-  'u17-2026': u17Data as TournamentData,
-  'asian-games-2026': asianGamesData as TournamentData,
-  'fifa-asean-cup-2026': fifaAseanCupData as TournamentData,
-};
+const tournamentModules = import.meta.glob<{ default: TournamentData }>(
+  './data/tournaments/*.json',
+  { eager: true },
+);
+
+const TOURNAMENT_DATA = Object.fromEntries(
+  Object.entries(tournamentModules).map(([path, module]) => [
+    path.slice(path.lastIndexOf('/') + 1, -'.json'.length),
+    module.default,
+  ]),
+);
+
+for (const tournament of TOURNAMENTS) {
+  if (!TOURNAMENT_DATA[tournament.id]) {
+    throw new Error(`Missing generated data for tournament "${tournament.id}"`);
+  }
+}
 
 const TODAY = todayInZone(MELBOURNE_TIME_ZONE);
 
@@ -75,7 +83,7 @@ function App() {
               href={tournamentData.tournament.sourceUrl}
               className="underline hover:text-slate-300"
             >
-              Wikipedia
+              {tournamentData.tournament.sourceLabel ?? 'Wikipedia'}
             </a>{' '}
             · scraped {new Date(tournamentData.tournament.scrapedAt).toLocaleString('en-AU')}
           </p>
@@ -101,7 +109,53 @@ function App() {
       </div>
 
       <main className="mx-auto flex max-w-[1800px] flex-col gap-6 px-4 sm:px-8">
-        {uiConfig.featuredTeam && (
+        {tournamentData.tournament.fixturesStatus === 'pending' && (
+          <section className="rounded-xl border border-amber-700/50 bg-amber-950/30 p-5">
+            <p className="text-xs font-bold uppercase tracking-wide text-amber-400">Upcoming tournament</p>
+            <h2 className="mt-1 text-lg font-bold text-slate-100">
+              Fixtures not yet published
+            </h2>
+            {tournamentData.tournament.scheduleWindow && (
+              <p className="mt-2 text-sm font-semibold text-slate-300">
+                Planned window: {tournamentData.tournament.scheduleWindow}
+              </p>
+            )}
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-400">
+              {tournamentData.tournament.statusMessage}
+            </p>
+            <p className="mt-3 text-sm text-slate-300">
+              Standings and the game timeline will populate after an official fixture source is published.
+            </p>
+            {tournamentData.tournament.participants && (
+              <div className="mt-5">
+                <h3 className="text-sm font-bold text-slate-200">
+                  Confirmed entrants ({tournamentData.tournament.participants.length})
+                </h3>
+                <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {tournamentData.tournament.participants.map((team) => (
+                    <div
+                      key={team}
+                      className="flex items-center gap-2 rounded-lg border border-slate-800 bg-slate-900/70 px-3 py-2 text-sm text-slate-200"
+                    >
+                      <Flag team={team} />
+                      <span>{team}</span>
+                      {team === featuredTeam && <span className="text-amber-400">★</span>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="mt-5 border-t border-amber-800/40 pt-4">
+              <h3 className="text-sm font-bold text-slate-200">Game timeline</h3>
+              <div className="mt-3 rounded-lg border border-dashed border-slate-700 px-4 py-5 text-sm text-slate-400">
+                Draw and match schedule awaiting official publication.
+              </div>
+            </div>
+          </section>
+        )}
+
+        {uiConfig.featuredTeam && tournamentData.tournament.fixturesStatus !== 'pending' && (
           <FeaturedTeamSpotlight team={uiConfig.featuredTeam} upcomingMatches={upcomingMatches} />
         )}
 
