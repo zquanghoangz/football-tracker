@@ -52,10 +52,10 @@ export function MatchList({
               </span>
             )}
             <KickoffTimes date={match.date} time={match.time} />
-            <div className="flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 font-medium text-slate-200 sm:w-auto sm:flex-1 sm:flex-nowrap">
+            <div className="flex min-w-0 w-full flex-wrap items-center justify-center gap-x-2 gap-y-1 font-medium text-slate-200 sm:w-auto sm:flex-1">
               <span
                 className={
-                  'flex items-center gap-1.5 ' +
+                  'flex items-center gap-1.5 whitespace-nowrap ' +
                   (match.homeTeam === featuredTeam ? 'font-bold text-emerald-300' : '')
                 }
               >
@@ -67,7 +67,7 @@ export function MatchList({
               </span>
               <span
                 className={
-                  'flex items-center gap-1.5 ' +
+                  'flex items-center gap-1.5 whitespace-nowrap ' +
                   (match.awayTeam === featuredTeam ? 'font-bold text-emerald-300' : '')
                 }
               >
@@ -75,7 +75,7 @@ export function MatchList({
                 {match.awayTeam}
               </span>
             </div>
-            <div className="w-full text-xs text-slate-500 sm:w-auto">{match.venue}</div>
+            <div className="w-full text-right text-xs text-slate-500">{match.venue}</div>
           </li>
         );
       })}
