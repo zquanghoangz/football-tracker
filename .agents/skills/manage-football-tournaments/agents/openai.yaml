@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Football Tournaments"
+  short_description: "Add and maintain tracked football tournaments"
+  default_prompt: "Use $manage-football-tournaments to add or update a tracked tournament safely."
