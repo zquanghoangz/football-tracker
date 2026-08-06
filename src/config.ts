@@ -10,8 +10,8 @@ export interface TournamentUIConfig {
 }
 
 export const TOURNAMENTS: TournamentUIConfig[] = [
-  { id: 'asean-2026', label: 'ASEAN Championship 2026', featuredTeam: FEATURED_TEAM },
-  { id: 'u17-2026', label: 'FIFA U-17 World Cup 2026', featuredTeam: FEATURED_TEAM },
-  { id: 'asian-games-2026', label: 'Asian Games 2026', featuredTeam: FEATURED_TEAM },
-  { id: 'fifa-asean-cup-2026', label: 'FIFA ASEAN Cup 2026', featuredTeam: FEATURED_TEAM },
+  { id: 'asean-2026', label: 'ASEAN 2026', featuredTeam: FEATURED_TEAM },
+  { id: 'u17-2026', label: 'U-17 2026', featuredTeam: FEATURED_TEAM },
+  { id: 'asian-games-2026', label: 'Asian Games', featuredTeam: FEATURED_TEAM },
+  { id: 'fifa-asean-cup-2026', label: 'FIFA ASEAN Cup', featuredTeam: FEATURED_TEAM },
 ];
