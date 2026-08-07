@@ -1,6 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { lastGameDate, firstGameDate, isTournamentOver } from './tournamentStatus.ts';
+import {
+  lastGameDate,
+  firstGameDate,
+  isGroupStageRunning,
+  isTournamentOver,
+} from './tournamentStatus.ts';
 import type { TournamentData, Match } from '../../types/tournament.ts';
 
 function stubMatch(date: string): Match {
@@ -61,6 +66,23 @@ test('firstGameDate returns the min date across group matches', () => {
 test('firstGameDate considers knockout legs and ignores null (unresolved) ones', () => {
   const data = stubData(['2026-08-10'], [null, '2026-08-05']);
   assert.equal(firstGameDate(data), '2026-08-05');
+});
+
+test('isGroupStageRunning is true from the first through the last group match', () => {
+  const data = stubData(['2026-07-24', '2026-07-31']);
+  assert.equal(isGroupStageRunning(data, '2026-07-24'), true);
+  assert.equal(isGroupStageRunning(data, '2026-07-28'), true);
+  assert.equal(isGroupStageRunning(data, '2026-07-31'), true);
+});
+
+test('isGroupStageRunning is false before or after the group stage', () => {
+  const data = stubData(['2026-07-24', '2026-07-31']);
+  assert.equal(isGroupStageRunning(data, '2026-07-23'), false);
+  assert.equal(isGroupStageRunning(data, '2026-08-01'), false);
+});
+
+test('isGroupStageRunning is false when there are no group matches', () => {
+  assert.equal(isGroupStageRunning(stubData([]), '2026-07-28'), false);
 });
 
 test('isTournamentOver is false when there are no matches', () => {

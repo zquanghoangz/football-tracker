@@ -9,7 +9,7 @@ import { Flag } from './components/Flag';
 import { TOURNAMENTS, MELBOURNE_TIME_ZONE } from './config';
 import { getFeaturedTeamUpcomingMatches } from './lib/featuredTeam';
 import { todayInZone } from './lib/matchTime';
-import { isTournamentOver, firstGameDate } from './lib/tournamentStatus';
+import { isGroupStageRunning, isTournamentOver, firstGameDate } from './lib/tournamentStatus';
 
 const tournamentModules = import.meta.glob<{ default: TournamentData }>(
   './data/tournaments/*.json',
@@ -61,6 +61,7 @@ function App() {
   const upcomingMatches = uiConfig.featuredTeam
     ? getFeaturedTeamUpcomingMatches(tournamentData, uiConfig.featuredTeam)
     : [];
+  const groupStageRunning = isGroupStageRunning(tournamentData, TODAY);
 
   function selectTournament(id: string) {
     setSelectedId(id);
@@ -161,18 +162,29 @@ function App() {
 
         <div className="grid gap-6 xl:grid-cols-2">
           {tournamentData.groups.map((group) => (
-            <section
-              key={group.name}
-              className="min-w-0 rounded-xl border border-slate-800 bg-slate-900/60 p-4 shadow-sm sm:p-5"
+            <details
+              key={`${uiConfig.id}-${group.name}`}
+              open={groupStageRunning}
+              className="group min-w-0 self-start rounded-xl border border-slate-800 bg-slate-900/60 shadow-sm"
             >
-              <h2 className="mb-3 text-base font-bold text-slate-100">{group.name}</h2>
-              <GroupTable
-                standings={group.standings}
-                matches={group.matches}
-                featuredTeam={featuredTeam}
-              />
-              <MatchList matches={group.matches} featuredTeam={featuredTeam} />
-            </section>
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 p-4 text-base font-bold text-slate-100 marker:content-none sm:p-5 [&::-webkit-details-marker]:hidden">
+                {group.name}
+                <span
+                  aria-hidden="true"
+                  className="text-lg text-slate-500 transition-transform group-open:rotate-180"
+                >
+                  ⌄
+                </span>
+              </summary>
+              <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+                <GroupTable
+                  standings={group.standings}
+                  matches={group.matches}
+                  featuredTeam={featuredTeam}
+                />
+                <MatchList matches={group.matches} featuredTeam={featuredTeam} />
+              </div>
+            </details>
           ))}
         </div>
 
