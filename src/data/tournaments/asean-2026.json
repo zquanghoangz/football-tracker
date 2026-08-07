@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-07T15:08:23.233Z"
+    "scrapedAt": "2026-08-07T16:08:03.657Z"
   },
   "groups": [
     {
@@ -346,13 +346,13 @@
         "name": "Semi-finals",
         "ties": [
           {
-            "team1": "Runner-up Group A",
+            "team1": "Singapore",
             "team2": "Winner Group B",
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-15",
               "time": "--:--",
-              "venue": null,
+              "venue": "Jalan Besar Stadium, Kallang",
               "homeScore": null,
               "awayScore": null
             },
@@ -366,7 +366,7 @@
           },
           {
             "team1": "Runner-up Group B",
-            "team2": "Winner Group A",
+            "team2": "Vietnam",
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-16",
@@ -377,8 +377,8 @@
             },
             "secondLeg": {
               "date": "2026-08-19",
-              "time": "--:--",
-              "venue": null,
+              "time": "20:00 UTC+7",
+              "venue": "Mỹ Đình National Stadium, Hanoi",
               "homeScore": null,
               "awayScore": null
             }
