@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-07T16:08:03.657Z"
+    "scrapedAt": "2026-08-07T17:06:17.310Z"
   },
   "groups": [
     {
@@ -352,7 +352,7 @@
             "firstLeg": {
               "date": "2026-08-15",
               "time": "--:--",
-              "venue": "Jalan Besar Stadium, Kallang",
+              "venue": "National Stadium, Singapore",
               "homeScore": null,
               "awayScore": null
             },
