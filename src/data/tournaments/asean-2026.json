@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-06T19:24:36.497Z"
+    "scrapedAt": "2026-08-07T15:08:23.233Z"
   },
   "groups": [
     {
@@ -10,49 +10,49 @@
       "standings": [
         {
           "team": "Vietnam",
-          "played": 3,
-          "won": 2,
+          "played": 4,
+          "won": 3,
           "drawn": 1,
           "lost": 0,
-          "goalsFor": 10,
-          "goalsAgainst": 0,
-          "goalDifference": 10,
-          "points": 7,
+          "goalsFor": 13,
+          "goalsAgainst": 1,
+          "goalDifference": 12,
+          "points": 10,
           "position": 1
         },
         {
           "team": "Singapore",
-          "played": 3,
+          "played": 4,
           "won": 2,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 0,
-          "goalsFor": 4,
-          "goalsAgainst": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
           "goalDifference": 3,
-          "points": 7,
+          "points": 8,
           "position": 2
         },
         {
           "team": "Indonesia",
-          "played": 3,
+          "played": 4,
           "won": 2,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 1,
-          "goalsFor": 8,
-          "goalsAgainst": 4,
+          "goalsFor": 9,
+          "goalsAgainst": 5,
           "goalDifference": 4,
-          "points": 6,
+          "points": 7,
           "position": 3
         },
         {
           "team": "Cambodia",
-          "played": 3,
+          "played": 4,
           "won": 1,
           "drawn": 0,
-          "lost": 2,
-          "goalsFor": 5,
-          "goalsAgainst": 7,
-          "goalDifference": -2,
+          "lost": 3,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "goalDifference": -4,
           "points": 3,
           "position": 4
         },
@@ -155,20 +155,20 @@
           "time": "20:00 UTC+7",
           "homeTeam": "Vietnam",
           "awayTeam": "Cambodia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 3,
+          "awayScore": 1,
           "venue": "Mỹ Đình National Stadium, Hanoi",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-07",
           "time": "21:00 UTC+8",
           "homeTeam": "Singapore",
           "awayTeam": "Indonesia",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 1,
           "venue": "Jalan Besar Stadium, Kallang",
-          "played": false
+          "played": true
         }
       ]
     },
