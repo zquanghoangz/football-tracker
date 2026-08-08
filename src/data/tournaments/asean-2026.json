@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-07T17:06:17.310Z"
+    "scrapedAt": "2026-08-08T15:44:12.412Z"
   },
   "groups": [
     {
@@ -177,49 +177,49 @@
       "standings": [
         {
           "team": "Thailand",
-          "played": 3,
-          "won": 3,
+          "played": 4,
+          "won": 4,
           "drawn": 0,
           "lost": 0,
-          "goalsFor": 8,
+          "goalsFor": 10,
           "goalsAgainst": 0,
-          "goalDifference": 8,
-          "points": 9,
+          "goalDifference": 10,
+          "points": 12,
           "position": 1
         },
         {
-          "team": "Myanmar",
-          "played": 3,
-          "won": 2,
+          "team": "Malaysia",
+          "played": 4,
+          "won": 3,
           "drawn": 0,
           "lost": 1,
-          "goalsFor": 12,
-          "goalsAgainst": 5,
-          "goalDifference": 7,
-          "points": 6,
+          "goalsFor": 7,
+          "goalsAgainst": 3,
+          "goalDifference": 4,
+          "points": 9,
           "position": 2
         },
         {
-          "team": "Malaysia",
-          "played": 3,
+          "team": "Myanmar",
+          "played": 4,
           "won": 2,
           "drawn": 0,
-          "lost": 1,
-          "goalsFor": 6,
-          "goalsAgainst": 3,
-          "goalDifference": 3,
+          "lost": 2,
+          "goalsFor": 12,
+          "goalsAgainst": 7,
+          "goalDifference": 5,
           "points": 6,
           "position": 3
         },
         {
           "team": "Philippines",
-          "played": 3,
+          "played": 4,
           "won": 1,
           "drawn": 0,
-          "lost": 2,
+          "lost": 3,
           "goalsFor": 5,
-          "goalsAgainst": 6,
-          "goalDifference": -1,
+          "goalsAgainst": 7,
+          "goalDifference": -2,
           "points": 3,
           "position": 4
         },
@@ -322,20 +322,20 @@
           "time": "20:00 UTC+7",
           "homeTeam": "Thailand",
           "awayTeam": "Myanmar",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 2,
+          "awayScore": 0,
           "venue": "Rajamangala Stadium, Bangkok",
-          "played": false
+          "played": true
         },
         {
           "date": "2026-08-08",
           "time": "21:00 UTC+8",
           "homeTeam": "Malaysia",
           "awayTeam": "Philippines",
-          "homeScore": null,
-          "awayScore": null,
+          "homeScore": 1,
+          "awayScore": 0,
           "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
-          "played": false
+          "played": true
         }
       ]
     }
@@ -347,31 +347,31 @@
         "ties": [
           {
             "team1": "Singapore",
-            "team2": "Winner Group B",
+            "team2": "Thailand",
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-15",
               "time": "--:--",
-              "venue": "National Stadium, Singapore",
+              "venue": "Yishun Stadium, Yishun",
               "homeScore": null,
               "awayScore": null
             },
             "secondLeg": {
               "date": "2026-08-18",
               "time": "--:--",
-              "venue": null,
+              "venue": "Rajamangala Stadium, Bangkok",
               "homeScore": null,
               "awayScore": null
             }
           },
           {
-            "team1": "Runner-up Group B",
+            "team1": "Malaysia",
             "team2": "Vietnam",
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-16",
               "time": "--:--",
-              "venue": null,
+              "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
               "homeScore": null,
               "awayScore": null
             },
