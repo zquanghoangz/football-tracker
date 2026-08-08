@@ -1,4 +1,4 @@
-import type { TournamentData } from '../../types/tournament.ts';
+import type { GroupData, TournamentData } from '../../types/tournament.ts';
 
 function addDays(date: string, days: number): string {
   const instant = new Date(`${date}T00:00:00Z`);
@@ -35,13 +35,8 @@ export function firstGameDate(data: TournamentData): string | null {
   return dates.length > 0 ? dates.reduce((min, d) => (d < min ? d : min)) : null;
 }
 
-export function isGroupStageRunning(data: TournamentData, today: string): boolean {
-  const dates = data.groups.flatMap((group) => group.matches.map((match) => match.date));
-  if (dates.length === 0) return false;
-
-  const first = dates.reduce((min, date) => (date < min ? date : min));
-  const last = dates.reduce((max, date) => (date > max ? date : max));
-  return today >= first && today <= last;
+export function isGroupComplete(group: GroupData): boolean {
+  return group.matches.length > 0 && group.matches.every((match) => match.played);
 }
 
 export function isTournamentOver(data: TournamentData, today: string): boolean {

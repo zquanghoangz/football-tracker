@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {
   lastGameDate,
   firstGameDate,
-  isGroupStageRunning,
+  isGroupComplete,
   isTournamentOver,
 } from './tournamentStatus.ts';
 import type { TournamentData, Match } from '../../types/tournament.ts';
@@ -68,21 +68,25 @@ test('firstGameDate considers knockout legs and ignores null (unresolved) ones',
   assert.equal(firstGameDate(data), '2026-08-05');
 });
 
-test('isGroupStageRunning is true from the first through the last group match', () => {
-  const data = stubData(['2026-07-24', '2026-07-31']);
-  assert.equal(isGroupStageRunning(data, '2026-07-24'), true);
-  assert.equal(isGroupStageRunning(data, '2026-07-28'), true);
-  assert.equal(isGroupStageRunning(data, '2026-07-31'), true);
+test('isGroupComplete is false before the group starts', () => {
+  const group = stubData(['2026-07-24', '2026-07-31']).groups[0];
+  assert.equal(isGroupComplete(group), false);
 });
 
-test('isGroupStageRunning is false before or after the group stage', () => {
-  const data = stubData(['2026-07-24', '2026-07-31']);
-  assert.equal(isGroupStageRunning(data, '2026-07-23'), false);
-  assert.equal(isGroupStageRunning(data, '2026-08-01'), false);
+test('isGroupComplete is false while any group match remains unplayed', () => {
+  const group = stubData(['2026-07-24', '2026-07-31']).groups[0];
+  group.matches[0].played = true;
+  assert.equal(isGroupComplete(group), false);
 });
 
-test('isGroupStageRunning is false when there are no group matches', () => {
-  assert.equal(isGroupStageRunning(stubData([]), '2026-07-28'), false);
+test('isGroupComplete is true when every group match has been played', () => {
+  const group = stubData(['2026-07-24', '2026-07-31']).groups[0];
+  group.matches.forEach((match) => { match.played = true; });
+  assert.equal(isGroupComplete(group), true);
+});
+
+test('isGroupComplete is false when the group has no scheduled matches', () => {
+  assert.equal(isGroupComplete(stubData([]).groups[0]), false);
 });
 
 test('isTournamentOver is false when there are no matches', () => {

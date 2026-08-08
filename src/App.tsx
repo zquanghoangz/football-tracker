@@ -9,7 +9,7 @@ import { Flag } from './components/Flag';
 import { TOURNAMENTS, MELBOURNE_TIME_ZONE } from './config';
 import { getFeaturedTeamUpcomingMatches } from './lib/featuredTeam';
 import { todayInZone } from './lib/matchTime';
-import { isGroupStageRunning, isTournamentOver, firstGameDate } from './lib/tournamentStatus';
+import { isGroupComplete, isTournamentOver, firstGameDate } from './lib/tournamentStatus';
 
 const tournamentModules = import.meta.glob<{ default: TournamentData }>(
   './data/tournaments/*.json',
@@ -61,7 +61,6 @@ function App() {
   const upcomingMatches = uiConfig.featuredTeam
     ? getFeaturedTeamUpcomingMatches(tournamentData, uiConfig.featuredTeam)
     : [];
-  const groupStageRunning = isGroupStageRunning(tournamentData, TODAY);
 
   function selectTournament(id: string) {
     setSelectedId(id);
@@ -161,31 +160,42 @@ function App() {
         )}
 
         <div className="grid gap-6 xl:grid-cols-2">
-          {tournamentData.groups.map((group) => (
-            <details
-              key={`${uiConfig.id}-${group.name}`}
-              open={groupStageRunning}
-              className="group min-w-0 self-start rounded-xl border border-slate-800 bg-slate-900/60 shadow-sm"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 p-4 text-base font-bold text-slate-100 marker:content-none sm:p-5 [&::-webkit-details-marker]:hidden">
-                {group.name}
-                <span
-                  aria-hidden="true"
-                  className="text-lg text-slate-500 transition-transform group-open:rotate-180"
-                >
-                  ⌄
-                </span>
-              </summary>
-              <div className="px-4 pb-4 sm:px-5 sm:pb-5">
-                <GroupTable
-                  standings={group.standings}
-                  matches={group.matches}
-                  featuredTeam={featuredTeam}
-                />
-                <MatchList matches={group.matches} featuredTeam={featuredTeam} />
-              </div>
-            </details>
-          ))}
+          {tournamentData.groups.map((group) => {
+            const groupComplete = isGroupComplete(group);
+
+            return (
+              <details
+                key={`${uiConfig.id}-${group.name}`}
+                open={!groupComplete}
+                className="group min-w-0 self-start rounded-xl border border-slate-800 bg-slate-900/60 shadow-sm"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 p-4 text-base font-bold text-slate-100 marker:content-none sm:p-5 [&::-webkit-details-marker]:hidden">
+                  <span className="flex items-center gap-2">
+                    {group.name}
+                    {groupComplete && (
+                      <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold tracking-wide text-emerald-400">
+                        DONE
+                      </span>
+                    )}
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="text-lg text-slate-500 transition-transform group-open:rotate-180"
+                  >
+                    ⌄
+                  </span>
+                </summary>
+                <div className="px-4 pb-4 sm:px-5 sm:pb-5">
+                  <GroupTable
+                    standings={group.standings}
+                    matches={group.matches}
+                    featuredTeam={featuredTeam}
+                  />
+                  <MatchList matches={group.matches} featuredTeam={featuredTeam} />
+                </div>
+              </details>
+            );
+          })}
         </div>
 
         {tournamentData.knockout.rounds.length > 0 && (
