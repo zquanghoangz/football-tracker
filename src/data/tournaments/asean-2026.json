@@ -2,7 +2,7 @@
   "tournament": {
     "name": "2026 ASEAN Championship (ASEAN Hyundai Cup 2026)",
     "sourceUrl": "https://en.wikipedia.org/wiki/2026_ASEAN_Championship",
-    "scrapedAt": "2026-08-08T15:44:12.412Z"
+    "scrapedAt": "2026-08-08T16:50:41.755Z"
   },
   "groups": [
     {
@@ -351,14 +351,14 @@
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-15",
-              "time": "--:--",
-              "venue": "Yishun Stadium, Yishun",
+              "time": "21:00 UTC+8",
+              "venue": "Jalan Besar Stadium, Kallang",
               "homeScore": null,
               "awayScore": null
             },
             "secondLeg": {
               "date": "2026-08-18",
-              "time": "--:--",
+              "time": "20:00 UTC+7",
               "venue": "Rajamangala Stadium, Bangkok",
               "homeScore": null,
               "awayScore": null
@@ -370,7 +370,7 @@
             "aggregate": null,
             "firstLeg": {
               "date": "2026-08-16",
-              "time": "--:--",
+              "time": "21:00 UTC+8",
               "venue": "Kuala Lumpur Stadium, Kuala Lumpur",
               "homeScore": null,
               "awayScore": null
